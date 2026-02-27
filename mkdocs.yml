@@ -1,0 +1,92 @@
+site_name: Quartermaster
+site_description: An agentic operating system for Claude Code
+site_url: https://marclien.github.io/qm-os
+repo_url: https://github.com/marclien/qm-os
+repo_name: marclien/qm-os
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Architecture:
+    - Overview: architecture/overview.md
+    - Folder Structure: architecture/folder-structure.md
+    - Skills System: architecture/skills-system.md
+    - Hooks: architecture/hooks.md
+    - Memory System: architecture/memory-system.md
+    - Search: architecture/search.md
+    - Self-Improvement: architecture/self-improvement.md
+  - Skills:
+    - Morning Plan: skills/morning.md
+    - Challenge: skills/challenge.md
+    - Weekly Review: skills/weekly.md
+    - Transform: skills/transform.md
+    - Brief: skills/brief.md
+    - Changelog: skills/changelog.md
+    - Draft: skills/draft.md
+  - Reference:
+    - CLAUDE.md Template: reference/quartermaster-md.md
+    - Task Format: reference/task-format.md
+    - Anti-Slop Rules: reference/anti-slop.md
+    - Rules System: reference/rules-system.md
+  - About: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/marclien
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/marclien

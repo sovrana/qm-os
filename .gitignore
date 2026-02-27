@@ -1,0 +1,19 @@
+# PII replacement map (contains real names -> placeholder mappings)
+.publish-config.json
+
+# Local settings (may contain API keys or personal paths)
+settings.local.json
+.claude/settings.local.json
+template/.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+brain-search/brain-search-env/
+brain-search/vector-index/
+
+# MkDocs build output
+site/
+
+# OS files
+.DS_Store
