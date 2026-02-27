@@ -11,7 +11,7 @@ Get QM running in 30 minutes. By the end you'll have a working vault with semant
 ## 1. Clone the Template
 
 ```bash
-git clone https://github.com/marclien/qm-os.git
+git clone https://github.com/sovrana/qm-os.git
 cp -r qm-os/template/ ~/my-vault/
 cd ~/my-vault/
 ```

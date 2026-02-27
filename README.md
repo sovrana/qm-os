@@ -18,7 +18,7 @@ Built over 8 weeks of daily production use. Not a proof of concept.
 
 ```bash
 # Clone the template
-git clone https://github.com/marclien/qm-os.git
+git clone https://github.com/sovrana/qm-os.git
 cp -r qm-os/template/ ~/my-vault/
 
 # Set up semantic search

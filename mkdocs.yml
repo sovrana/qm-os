@@ -1,8 +1,8 @@
 site_name: Quartermaster
 site_description: An agentic operating system for Claude Code
-site_url: https://marclien.github.io/qm-os
-repo_url: https://github.com/marclien/qm-os
-repo_name: marclien/qm-os
+site_url: https://sovrana.github.io/qm-os
+repo_url: https://github.com/sovrana/qm-os
+repo_name: sovrana/qm-os
 
 theme:
   name: material
@@ -87,6 +87,6 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/marclien
+      link: https://github.com/sovrana
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/marclien
+      link: https://linkedin.com/in/sovrana
