@@ -168,24 +168,19 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 
 <p class="section-label">Type a command, get a result</p>
 
-## 15 skills built in
+## 7 core skills included
 
 | Command | What it does | Time |
 |---------|-------------|------|
-| **`/morning`** | Prioritised daily plan with leverage scoring and draft follow-ups for stale items | ~5 min |
-| **`/brief`** | Pre-meeting one-pager: last 3 meetings, open tasks, "what NOT to say" | ~2 min |
-| **`/challenge`** | 5 parallel red-team lenses: audience fit, logic, contradictions, blind spots, pre-mortem | ~5 min |
-| **`/transform`** | Process transcript into structured knowledge: decisions, actions, insights, routing | ~5 min |
-| **`/draft`** | Voice-calibrated outbound content: LinkedIn, emails, memos. Batch options for short-form | ~5 min |
-| **`/weekly`** | Full system audit: 7 parallel subagents for task cleanup, memory refresh, self-improvement | ~30 min |
-| **`/changelog`** | View or log iteration decisions. Contradiction detection built in | ~1 min |
-| **`/inbox`** | Process captures and route to tasks, themes, or reference | ~5 min |
-| **`/show`** | Filtered task views by theme, person, or waiting status | ~1 min |
-| **`/gmail`** | Natural language Gmail search with full body text | ~2 min |
-| **`/prep`** | Deep research briefing: vault search, stakeholder adaptation, context assembly | ~10 min |
-| **`/publish`** | Sync to public repo with full PII sanitisation and privacy gate | ~5 min |
+| [**`/morning`**](skills/morning.md) | Prioritised daily plan with leverage scoring and draft follow-ups for stale items | ~5 min |
+| [**`/brief`**](skills/brief.md) | Pre-meeting one-pager: last 3 meetings, open tasks, "what NOT to say" | ~2 min |
+| [**`/challenge`**](skills/challenge.md) | 5 parallel red-team lenses: audience fit, logic, contradictions, blind spots, pre-mortem | ~5 min |
+| [**`/transform`**](skills/transform.md) | Process transcript into structured knowledge: decisions, actions, insights, routing | ~5 min |
+| [**`/draft`**](skills/draft.md) | Voice-calibrated outbound content: LinkedIn, emails, memos. Batch options for short-form | ~5 min |
+| [**`/weekly`**](skills/weekly.md) | Full system audit: 7 parallel subagents for task cleanup, memory refresh, self-improvement | ~30 min |
+| [**`/changelog`**](skills/changelog.md) | View or log iteration decisions. Contradiction detection built in | ~1 min |
 
-Plus `/evening`, `/school-emails`, `/clipboard`, and custom skills you build yourself.
+I've built another 10+ for my own workflows: `/inbox`, `/gmail`, `/prep`, `/publish`, `/show`, `/evening`. Writing a new skill takes under 10 minutes. [How skills work →](architecture/skills-system.md)
 
 [Browse all skills →](skills/morning.md)
 
@@ -233,9 +228,9 @@ Meeting transcription. Record, export, drop in inbox. The system handles the res
 <div class="card" markdown>
 <div class="card-icon">⚡</div>
 
-### Skills <span class="badge">15 built</span>
+### Skills <span class="badge">7 core</span>
 
-Daily planning, meeting prep, red-team review, content drafting, weekly maintenance, Gmail search, transcript processing, and more.
+Daily planning, meeting prep, red-team review, content drafting, weekly maintenance, transcript processing. Write your own in under 10 minutes.
 
 [Browse skills →](skills/morning.md)
 </div>
@@ -267,11 +262,11 @@ Vault, skills, hooks, memory, search, and a self-improvement loop that rewrites 
 <div class="card" markdown>
 <div class="card-icon">💡</div>
 
-### New to Claude Code?
+### Choose Your Path
 
-Start here if you haven't used Claude Code before. We'll point you to the best beginner resources.
+Three starting points: ChatGPT user, Claude Code user, or AI system builder. Pick the one that fits.
 
-[The Essentials →](new-to-claude-code.md)
+[Get Started →](new-to-claude-code.md)
 </div>
 <div class="card" markdown>
 <div class="card-icon">🚀</div>
