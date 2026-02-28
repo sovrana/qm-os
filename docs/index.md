@@ -32,7 +32,7 @@ Not for you if you're looking for a chatbot wrapper, a coding assistant, or a on
 
 <p class="section-label">What makes this different</p>
 
-## Five things nothing else does
+## Seven things nothing else does
 
 <div class="features" markdown>
 <div class="feature" markdown>
@@ -61,6 +61,20 @@ Not for you if you're looking for a chatbot wrapper, a coding assistant, or a on
 <div class="feature-text" markdown>
 <strong>It makes your knowledge searchable</strong>
 <span>Three-mode search across everything you've ever written. Semantic finds concepts. Keywords rank matches. Grep finds exact patterns. Run them in parallel.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">🎙️</div>
+<div class="feature-text" markdown>
+<strong>It turns meetings into structured knowledge</strong>
+<span>Record a meeting, drop the transcript. Decisions, action items, and insights get extracted automatically. Actions go straight to your task list. No manual filing. No forgotten follow-ups.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">📋</div>
+<div class="feature-text" markdown>
+<strong>It manages your tasks like a chief of staff</strong>
+<span>Leverage scoring bumps high-impact quick wins above routine admin. Waiting items age and trigger follow-up drafts. Your daily plan weights by strategic priority, not just due dates.</span>
 </div>
 </div>
 <div class="feature" markdown>
@@ -116,6 +130,11 @@ Before a meeting, Claude pulls the last 3 meeting notes, open tasks, waiting ite
 <span class="time">11:00am — /challenge</span>
 
 Red-team a strategy doc before sharing it with the board. Five parallel analysis lenses run simultaneously: logical holes, evidence gaps, audience fit, political risk, blind spot check.
+</div>
+<div class="moment" markdown>
+<span class="time">2:00pm — /transform</span>
+
+Drop this morning's meeting transcript in the inbox. Claude extracts decisions, action items, and insights. Raw file and processed summary land in the right theme folder. Actions go straight to tasks.md.
 </div>
 <div class="moment" markdown>
 <span class="time">5:00pm — session ends</span>

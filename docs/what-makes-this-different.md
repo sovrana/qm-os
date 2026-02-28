@@ -1,6 +1,6 @@
 # What Makes This Different
 
-Five things this system does that nothing else I've seen comes close to.
+Seven things this system does that nothing else I've seen comes close to.
 
 ---
 
@@ -51,7 +51,33 @@ Default behaviour runs semantic and exact search in parallel on every query. You
 
 The more you write, the smarter the search gets. Your vault becomes a genuine second brain - not a graveyard of files you'll never find again.
 
-## 5. It publishes itself safely
+## 5. It turns meetings into structured knowledge
+
+You finish a meeting. You have a recording or a transcript. What happens to it?
+
+Usually: nothing. It sits in a folder. The action items you agreed on get half-remembered. The decisions get relitigated next week because nobody wrote them down properly.
+
+Quartermaster's `/transform` skill changes this entirely. Drop a transcript in the inbox. The system extracts decisions, action items, insights, and open questions. It creates two files - the raw transcript (for reference) and a processed summary (for working from). Every action item goes straight into `tasks.md` with the right theme tag. The original gets archived.
+
+For batch processing, `/transform inbox` clears everything in your inbox in one pass. For conversations themselves, `/transform session` captures the current chat's insights and writes them into the vault's permanent structure. It even runs a performance-vs-prep comparison: if you had a brief for this meeting, it scores what landed, what was missed, and what was improvised.
+
+No meeting is wasted. No action item is forgotten. No decision gets relitigated.
+
+## 6. It manages your tasks like a chief of staff
+
+Task systems sort by due date. That puts "buy trousers" above "prepare for Monday's board session" if the trousers are due first. You spend your day doing what's technically overdue instead of what actually matters.
+
+Quartermaster's task management works differently. A single `tasks.md` file powers everything, with two scoring dimensions most systems ignore:
+
+**Leverage scoring.** Every task can carry impact and effort tags. High impact, low effort? That's your highest-leverage move - it bumps to P1 even without a due date. Low impact, high effort? Flagged with "consider deferring." The system does triage, not just sorting.
+
+**Strategic weighting.** Your `/morning` plan reads the Live Strategic State from memory. If your biggest deal closes next week, tasks in that theme outrank routine admin regardless of due dates. The plan reflects what actually matters this week, not what's technically next.
+
+**Waiting item management.** Items tagged `@waiting(PersonName)` age automatically. After 7 days, `/morning` generates draft follow-up messages - not just a flag saying "this is old" but an actual nudge you can send. `/weekly` audits everything over 14 days for escalation.
+
+The result: you open Claude Code in the morning, type `/morning`, and get a plan that a good chief of staff would have written.
+
+## 7. It publishes itself safely
 
 This site is the proof.
 
@@ -65,9 +91,9 @@ This means you can open-source your actual operating system - the one you use ev
 
 ## How these connect
 
-These five aren't independent features. They form a single loop:
+These seven aren't independent features. They form a single loop:
 
-**Use the system** → corrections feed the calibration log → patterns graduate to permanent rules → rules improve every session → better output generates fewer corrections → the system stabilises around your actual preferences.
+**Use the system** → meetings become structured knowledge → tasks get prioritised by leverage → corrections feed the calibration log → patterns graduate to permanent rules → rules improve every session → better output generates fewer corrections → the system stabilises around your actual preferences.
 
 You don't configure this system. You grow it.
 
