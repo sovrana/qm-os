@@ -1,99 +1,149 @@
 # What Makes This Different
 
-Seven things this system does that nothing else I've seen comes close to.
+Eight things this system does that nothing else I've seen comes close to.
 
 ---
 
-## 1. It gets smarter every time you use it
+## 1. It never sleeps
+
+Most AI tools wait for you to open them. Quartermaster doesn't.
+
+A daemon called OpenClaw runs 24/7 on a separate machine, connected to the same vault via iCloud sync. Every hour, it runs a heartbeat that checks five things:
+
+- **Inbox processing.** New files in `00_Inbox/` get auto-detected. Transcripts under 5,000 words are processed autonomously: theme detection, decision extraction, action item routing, summary creation. You drop a file and walk away. It handles the rest.
+- **Waiting item alerts.** Items tagged `@waiting(PersonName)` age automatically. Past 7 days, you get a Telegram notification with the person, the item, and how long it's been. Past 14 days, it flags for escalation.
+- **Due today reminders.** Tasks with today's date surface on your phone before you sit down.
+- **Morning plan.** Between 6-8am, the system generates a full prioritised daily plan and sends a condensed version to Telegram. You wake up knowing what matters.
+- **Evening summary.** Between 5-7pm, it compares the morning plan to what actually got done. Tomorrow's top 3. Waiting items that moved. Captures that came in.
+
+The system has agency between sessions. That's fundamentally different from "open Claude Code and run a command."
+
+## 2. Every meeting becomes permanent, searchable, actionable knowledge
+
+The pipeline works like this:
+
+1. **Record** the meeting with MacWhisper (a desktop transcription app)
+2. **Drop** the transcript file into `00_Inbox/` (or `00_Inbox/macwhisper/`)
+3. **Walk away.** The heartbeat picks it up within the hour
+
+What happens autonomously:
+
+- Theme detection (which workstream does this belong to?)
+- Decision extraction (what was agreed?)
+- Action item extraction (who owes what, by when?) - actions go straight to `tasks.md` with the right theme tag
+- Key insight capture (what shifted in the strategic picture?)
+- Two files created: raw transcript (permanent reference) and processed summary (working document)
+- Original archived to `99_System/logs/processed/`
+
+For large files (>5,000 words), you get a Telegram flag and run `/transform` manually. For everything else, it's fully autonomous.
+
+For conversations with Claude Code itself, `/transform session` captures the session's insights into the vault. It even runs a performance-vs-prep comparison: if you had a brief for this meeting, it scores what landed, what was missed, and what was improvised.
+
+No meeting is wasted. No action item forgotten. No decision relitigated because nobody wrote it down.
+
+## 3. Tasks managed like a chief of staff
+
+Task systems sort by due date. That puts "buy new shoes" above "prepare for Monday's board session" if the shoes are due first.
+
+Quartermaster's task management is built around three ideas most tools ignore:
+
+**Leverage scoring.** Every task can carry impact and effort tags. The engine calculates leverage as Impact divided by Effort:
+
+| Impact | Effort | What Happens |
+|--------|--------|--------------|
+| High | Low | **Highest leverage** - bumps to P1 even without a due date |
+| High | Medium | Strong candidate for today |
+| Medium | Low | Quick win, surfaces in P3 |
+| Low | High | Flagged: "consider deferring" |
+
+**Strategic weighting.** The daily plan reads the Live Strategic State from memory. If your biggest deal closes next week, tasks in that theme outrank routine admin regardless of due dates. The plan reflects what actually matters this week, not what's technically next.
+
+**Proactive follow-up.** Waiting items don't just age silently. After 7 days, the system drafts actual follow-up messages you can send. Not just a flag saying "this is old" but a ready-to-send nudge. After 14 days, Telegram alerts for escalation. A weekly audit surfaces everything that slipped through cracks.
+
+The result: you open your phone in the morning and your day is already planned by an agent that understands strategic priority, not just calendar deadlines.
+
+## 4. Five-lens red team on every important document
+
+Before anything important leaves the building, `/challenge` runs five independent analysis agents simultaneously:
+
+1. **Audience Fit** - Would the target reader finish this? Does it match their communication preferences? Is the ask clear in 30 seconds?
+2. **Logic & Evidence** - Are claims backed by numbers or just directional language? Would a sceptic find it compelling?
+3. **Vault Contradictions** - Searches everything you've written for conflicts. Has the positioning shifted without acknowledging the change?
+4. **Known Blind Spots** - Applies your documented blind spots from CLAUDE.md. Architecture without execution mechanics? Culture angle missing? Greenfield bias?
+5. **Pre-Mortem** - How does this fail? Top 3 failure modes. Strongest counter-argument. The question your audience will ask that you haven't answered.
+
+The five agents run as independent subprocesses. The pre-mortem doesn't know what the audience-fit lens found, and vice versa. That independence is the point - sequential review anchors on the first problem found. Parallel execution produces genuinely different angles.
+
+Returns a verdict (Strong / Needs Work / Weak), the top 3 issues, and pushes actionable fixes to your task list.
+
+## 5. It rewrites its own instructions
 
 Every AI tool starts from zero. You correct it, it forgets. You correct it again next week.
 
-Quartermaster doesn't forget. When you kill a framing, reject a word choice, or redirect an approach, the system logs it as a calibration data point. Patterns that appear three or more times automatically graduate into permanent CLAUDE.md rules. A weekly review promotes them, retires stale ones, and surfaces new patterns worth capturing.
+Quartermaster runs two parallel feedback mechanisms:
 
-After a month of daily use, the CLAUDE.md file contains dozens of rules that were discovered through use, not designed upfront. The system literally rewrites its own instructions based on your behaviour. Every session makes the next one better. Every correction makes the same mistake impossible.
+**The calibration log.** Every time you reject a framing, kill a word choice, redirect an approach, or correct a tone - it's logged. Format: what was tried, what replaced it, why. This file is append-only and compounds over time.
 
-This is the single most important feature. Everything else exists to serve this loop.
+**The BEAD system.** Every `/transform session` extracts improvement suggestions from the conversation. New suggestions get fuzzy-matched against existing ones. Similar suggestions increment a counter. When a suggestion hits 3 occurrences across independent sessions, it becomes a BEAD - validated and ready to implement.
 
-## 2. It knows your context before you open your mouth
+**The graduation pattern:** calibration log (observed) → 3+ similar entries → formal rule in CLAUDE.md (codified) → default behaviour (automatic).
 
-Six specialised memory files load automatically at session start. Not a generic memory dump - six distinct cognitive functions:
+This means "stop using em dashes" goes from a one-off correction to a permanent editing rule. "Start financial sessions with a numbers table" goes from a suggestion to a mandatory session default. The operating rules aren't designed upfront. They're discovered through use and promoted when validated.
 
-- **Where things stand right now** - live strategic state across all your workstreams, updated weekly
-- **How you actually write** - real samples of your emails and memos, not a style guide
-- **What each person cares about** - dynamic stakeholder postures that shift as relationships evolve
-- **What you decided this week** - prevents the AI from proposing something you already rejected on Tuesday
-- **Where your domains connect** - when work in one area changes the calculus of another, captured with evidence and dates
-- **Every correction you've ever made** - the staging area for permanent rules
+After 8 weeks: 130+ suggestions extracted, 7 graduated to permanent rules. Each one eliminated a recurring friction point.
 
-On top of this, the system detects what kind of work session you're in and loads the right defaults. Financial discussion? A numbers table starts building immediately. Legal review? Missing cross-references get flagged before you ask. Vendor analysis? Your framework scoring grid appears. Stakeholder prep? Communication style adjusts to who you're talking to.
+## 6. Captures from everywhere, processes centrally
 
-You never explain context. The system already has it.
+The system isn't one tool. It's an ecosystem that captures from every device you use:
 
-## 3. It writes like you, not like AI
+- **Obsidian on your phone** - Browse the vault, read status docs, check meeting notes, edit tasks. Same markdown files, synced via iCloud.
+- **iOS Shortcuts** - "Hey Siri, QM capture" dictates a thought, timestamps it, and appends to your capture file via Obsidian's URL scheme.
+- **Telegram** - Message the bot: "Remind me to call Sean about the contract." Captured as a task in `tasks.md` with the right theme tag. Ask "waiting?" and get your full waiting list with ages.
+- **MacWhisper** - Meeting transcripts. Record, export, drop in inbox.
+- **Share sheet** - Select text in any iOS app, share to QM. Appended to your capture file.
+- **Email forwarding** - Forward emails to the inbox for processing.
 
-You know the feeling. You ask an AI to draft an email and it comes back with "I hope this message finds you well" followed by three paragraphs of corporate mush sprinkled with words like "leverage" and "robust."
+Everything converges on `00_Inbox/` or `01_Todos/capture.md`. From there, the `/inbox` skill or the autonomous heartbeat routes it: tasks to `tasks.md`, content to the right theme folder, references to `03_Reference/`.
 
-Quartermaster attacks this from two directions.
+One inbox. Multiple capture points. Automatic processing. Nothing falls through.
 
-**Voice matching:** You give it 3-5 samples of your actual writing - your best emails, sharpest memos, strongest posts. Before any writing task, the system reads these and calibrates against your real cadence. Sentence length variation. Verb strength. How you open and close. The specificity level you actually use. Not "professional tone" - YOUR tone.
+## 7. Connected to your actual work tools
 
-**Anti-slop enforcement:** 40+ banned words, phrases, and structures, enforced on every output. No "delve." No "robust." No em dashes (the single biggest AI tell). No strawman questions. No "Not X, but Y" cliches. British spelling if that's what you use. Paragraph length limits. A burstiness requirement - five words, then thirty.
+This isn't a closed system. It plugs into the tools you already use:
 
-The result reads like a human wrote it, because the most common AI tells are structurally eliminated and the voice is calibrated against real samples instead of vibes.
+- **Gmail** - Natural language search from the terminal. "Find emails from Sarah about the contract in the last month." Results with subjects, dates, and full body text.
+- **Corporate Outlook & Calendar** - Accessed via browser automation through a Windows 365 VM. Claude reads emails, extracts calendar events, drafts responses.
+- **Google Drive** - Access via the Google Workspace CLI.
+- **Rich email output** - Markdown drafts convert to styled HTML and copy to clipboard. Paste into Gmail, Outlook, or Word with formatting preserved: tables, headers, bold, everything.
+- **Office documents** - Generate DOCX, PPTX, XLSX, and PDF directly from Claude Code sessions.
+- **School emails** - Filtered and summarised from Highgate and Channing school portals (yes, it handles the parenting admin too).
 
-## 4. It makes your entire knowledge base searchable
+The output pipeline matters as much as the input. Writing a board memo in markdown is pointless if you can't get it into the format stakeholders expect. One command converts and copies.
 
-Everything you write goes into a markdown vault. The system makes that vault genuinely searchable - not just grep.
+## 8. Automatic decision tracking across 100-round iterations
 
-Three modes, each for a different need: **semantic search** finds conceptually related content even when you can't name what you're looking for ("what have we discussed about organisational resistance?"). **Keyword ranking** surfaces exact term matches ordered by relevance. **Pattern matching** finds specific names, numbers, and file paths instantly.
+When you're on round 47 of a document, you need to know why the budget table was removed in round 12. Git tracks what changed. Quartermaster tracks **why**.
 
-Default behaviour runs semantic and exact search in parallel on every query. You get both conceptual matches and precise hits. Your notes from six months ago surface alongside yesterday's meeting notes when they're relevant.
+Every tracked document gets a companion changelog that records:
 
-The more you write, the smarter the search gets. Your vault becomes a genuine second brain - not a graveyard of files you'll never find again.
+- **Changed:** What was added, removed, or restructured
+- **Why:** The stated reason
+- **Decided:** What was chosen
+- **Rejected:** What was eliminated (this is the load-bearing field)
 
-## 5. It turns meetings into structured knowledge
+The system logs automatically during iteration - you don't invoke it. Structural changes, section removals, and explicit reasoning all trigger entries. Typo fixes and word swaps don't.
 
-You finish a meeting. You have a recording or a transcript. What happens to it?
+The killer feature is **contradiction detection.** When a new change reverses a previously logged decision, the system catches it immediately: "This reverses the Round 3 decision to remove the competitive analysis. Intentional?"
 
-Usually: nothing. It sits in a folder. The action items you agreed on get half-remembered. The decisions get relitigated next week because nobody wrote them down properly.
-
-Quartermaster's `/transform` skill changes this entirely. Drop a transcript in the inbox. The system extracts decisions, action items, insights, and open questions. It creates two files - the raw transcript (for reference) and a processed summary (for working from). Every action item goes straight into `tasks.md` with the right theme tag. The original gets archived.
-
-For batch processing, `/transform inbox` clears everything in your inbox in one pass. For conversations themselves, `/transform session` captures the current chat's insights and writes them into the vault's permanent structure. It even runs a performance-vs-prep comparison: if you had a brief for this meeting, it scores what landed, what was missed, and what was improvised.
-
-No meeting is wasted. No action item is forgotten. No decision gets relitigated.
-
-## 6. It manages your tasks like a chief of staff
-
-Task systems sort by due date. That puts "buy trousers" above "prepare for Monday's board session" if the trousers are due first. You spend your day doing what's technically overdue instead of what actually matters.
-
-Quartermaster's task management works differently. A single `tasks.md` file powers everything, with two scoring dimensions most systems ignore:
-
-**Leverage scoring.** Every task can carry impact and effort tags. High impact, low effort? That's your highest-leverage move - it bumps to P1 even without a due date. Low impact, high effort? Flagged with "consider deferring." The system does triage, not just sorting.
-
-**Strategic weighting.** Your `/morning` plan reads the Live Strategic State from memory. If your biggest deal closes next week, tasks in that theme outrank routine admin regardless of due dates. The plan reflects what actually matters this week, not what's technically next.
-
-**Waiting item management.** Items tagged `@waiting(PersonName)` age automatically. After 7 days, `/morning` generates draft follow-up messages - not just a flag saying "this is old" but an actual nudge you can send. `/weekly` audits everything over 14 days for escalation.
-
-The result: you open Claude Code in the morning, type `/morning`, and get a plan that a good chief of staff would have written.
-
-## 7. It publishes itself safely
-
-This site is the proof.
-
-The working system uses real names, real companies, real financial numbers. A publish pipeline maps every piece of identifying information to a sanitised replacement. It runs the full substitution, then greps the entire output for anything that slipped through. If a single match is found, the commit is blocked.
-
-No separate "public version" to maintain by hand. No sanitised fork that drifts out of sync. Build in production with all the context you need. Share openly when you're ready. The privacy gate handles the rest.
-
-This means you can open-source your actual operating system - the one you use every day, not a demo version - without exposing a single piece of private information.
+In long iterations, it's easy to circle back to something you already tried and rejected. The changelog prevents accidental regression and forces conscious reversals. Rejected alternatives are permanent constraints unless explicitly overturned.
 
 ---
 
 ## How these connect
 
-These seven aren't independent features. They form a single loop:
+These eight aren't independent features. They form a loop:
 
-**Use the system** → meetings become structured knowledge → tasks get prioritised by leverage → corrections feed the calibration log → patterns graduate to permanent rules → rules improve every session → better output generates fewer corrections → the system stabilises around your actual preferences.
+**Capture from anywhere** → meetings and notes flow into the inbox → **autonomous processing** extracts decisions and actions → **task management** prioritises by leverage and strategic weight → **proactive alerts** flag what's slipping → **daily work sessions** produce documents → **/challenge** red-teams before sharing → **decision tracking** prevents regression → **corrections** feed the calibration log → patterns **graduate to permanent rules** → the system gets smarter → better output generates fewer corrections.
 
 You don't configure this system. You grow it.
 

@@ -7,7 +7,7 @@ hide:
 
 # Quartermaster
 
-<p class="subtitle">An AI operating system that gets smarter every time you use it. Designed by a business exec, for business execs. No engineers were distracted in the making of this.</p>
+<p class="subtitle">A personal AI operating system that runs 24/7, captures from every device, processes meetings autonomously, manages your tasks, red-teams your work, and gets smarter every week. Built by a business exec who got tired of re-explaining context every morning.</p>
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
 [What's Different](what-makes-this-different.md){ .md-button }
@@ -16,7 +16,7 @@ hide:
 </div>
 
 <div class="intro-note" markdown>
-Built by [Marc Lien](about.md), an AI transformation lead inside a global PE firm. Not a developer. I manage five workstreams across multiple portfolio companies and I needed an AI assistant that actually remembers what I told it yesterday. So I built one. 8 weeks of daily production use. Open source. [Read the backstory →](about.md)
+Built by [Marc Lien](about.md), an AI transformation lead inside a global PE firm. Not a developer. I manage five workstreams across multiple portfolio companies. I needed an AI assistant that works while I sleep, remembers everything I've told it, and gets better without me asking. Nothing like it existed. So I built one. 8 weeks of daily production use. Open source. [Read the backstory →](about.md)
 </div>
 
 <p class="section-label">Who this is for</p>
@@ -25,63 +25,70 @@ Built by [Marc Lien](about.md), an AI transformation lead inside a global PE fir
 
 - **Run on Claude Code daily** and are tired of stateless conversations
 - **Manage multiple workstreams** with different stakeholders, contexts, and communication styles
-- **Write documents that go through 10+ rounds** of iteration, not one-shot prompts
-- **Want AI output that sounds like them**, not like a corporate chatbot
+- **Process meetings and transcripts** and need decisions, actions, and insights extracted automatically
+- **Want an AI that works between sessions** - processing your inbox, flagging slipping tasks, sending you a morning plan before you open your laptop
 
 Not for you if you're looking for a chatbot wrapper, a coding assistant, or a one-click productivity hack. This is a system you build and grow over weeks.
 
 <p class="section-label">What makes this different</p>
 
-## Seven things nothing else does
+## Eight things nothing else does
 
 <div class="features" markdown>
 <div class="feature" markdown>
-<div class="feature-icon">🔄</div>
+<div class="feature-icon">🌙</div>
 <div class="feature-text" markdown>
-<strong>It gets smarter every time you use it</strong>
-<span>Corrections auto-graduate into permanent rules. The system rewrites its own instructions based on your behaviour. After a month, it knows your preferences better than most human assistants.</span>
-</div>
-</div>
-<div class="feature" markdown>
-<div class="feature-icon">🧠</div>
-<div class="feature-text" markdown>
-<strong>It knows your context before you explain it</strong>
-<span>Six-file memory architecture, session-type pre-flights, stakeholder-adapted output. Financial session starts a numbers table. Legal review flags missing cross-references. Automatically.</span>
-</div>
-</div>
-<div class="feature" markdown>
-<div class="feature-icon">✍️</div>
-<div class="feature-text" markdown>
-<strong>It writes like you, not like AI</strong>
-<span>Voice-matched against your real writing samples. 40+ banned AI-slop words and structures. No "delve." No em dashes. Output reads like a human wrote it.</span>
-</div>
-</div>
-<div class="feature" markdown>
-<div class="feature-icon">🔍</div>
-<div class="feature-text" markdown>
-<strong>It makes your knowledge searchable</strong>
-<span>Three-mode search across everything you've ever written. Semantic finds concepts. Keywords rank matches. Grep finds exact patterns. Run them in parallel.</span>
+<strong>It never sleeps</strong>
+<span>A daemon runs 24/7 on a second machine. Hourly heartbeat processes your inbox, flags slipping tasks via Telegram, sends a prioritised morning plan to your phone before you wake up, and an evening summary when you stop. The system has agency between sessions.</span>
 </div>
 </div>
 <div class="feature" markdown>
 <div class="feature-icon">🎙️</div>
 <div class="feature-text" markdown>
-<strong>It turns meetings into structured knowledge</strong>
-<span>Record a meeting, drop the transcript. Decisions, action items, and insights get extracted automatically. Actions go straight to your task list. No manual filing. No forgotten follow-ups.</span>
+<strong>Meetings become permanent, searchable knowledge</strong>
+<span>Record with MacWhisper, drop the transcript. The system auto-detects the theme, extracts decisions, actions, and insights, routes everything to the right folder. Files under 5,000 words process autonomously. You don't even need to be at your desk.</span>
 </div>
 </div>
 <div class="feature" markdown>
 <div class="feature-icon">📋</div>
 <div class="feature-text" markdown>
-<strong>It manages your tasks like a chief of staff</strong>
-<span>Leverage scoring bumps high-impact quick wins above routine admin. Waiting items age and trigger follow-up drafts. Your daily plan weights by strategic priority, not just due dates.</span>
+<strong>Tasks managed like a chief of staff</strong>
+<span>Leverage scoring (Impact x Effort) trumps due dates. Strategic weighting from live priorities. Waiting items age and trigger auto-drafted follow-ups. Proactive Telegram alerts when items slip past 7 days. Weekly audit surfaces what fell through cracks.</span>
 </div>
 </div>
 <div class="feature" markdown>
-<div class="feature-icon">🔒</div>
+<div class="feature-icon">🔴</div>
 <div class="feature-text" markdown>
-<strong>It publishes itself safely</strong>
-<span>Build with real names and real numbers. The privacy pipeline sanitises everything before it touches GitHub. This is how this site exists.</span>
+<strong>Five-lens red team on every important document</strong>
+<span>Before anything goes to the board, /challenge runs 5 independent agents in parallel: audience fit, logic gaps, vault contradictions, your known blind spots, and a pre-mortem. Independent execution means no anchoring. Verdict + top 3 fixes in one pass.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">🔄</div>
+<div class="feature-text" markdown>
+<strong>It rewrites its own instructions</strong>
+<span>Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. A weekly review surfaces improvements. After a month, the system knows your preferences better than most human assistants. You don't configure it. You grow it.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">📱</div>
+<div class="feature-text" markdown>
+<strong>Captures from everywhere, processes centrally</strong>
+<span>Obsidian on your phone. iOS Shortcuts for voice capture ("Hey Siri, QM capture"). Telegram for remote task entry. MacWhisper for transcripts. Share sheet from any app. Everything converges on one inbox that gets processed automatically.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">🔗</div>
+<div class="feature-text" markdown>
+<strong>Connected to your actual work tools</strong>
+<span>Gmail search from the terminal. Corporate Outlook and calendar via browser automation. Markdown to rich HTML clipboard for pasting into Gmail, Word, or Outlook. Office document generation (DOCX, PPTX, XLSX). School emails filtered and summarised.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">📝</div>
+<div class="feature-text" markdown>
+<strong>Automatic decision tracking across 100-round iterations</strong>
+<span>Every structural change logged with reasoning. Contradiction detection catches when you reverse a previous decision: "This reverses the Round 12 decision to remove the budget table. Intentional?" No accidentally relitigating settled questions.</span>
 </div>
 </div>
 </div>
@@ -112,45 +119,116 @@ Needs: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) + Python 3.
 
 <div class="timeline" markdown>
 <div class="moment" markdown>
-<span class="time">8:30am</span>
+<span class="time">6:30am — phone buzzes</span>
 
-Open Claude Code. The session-start hook loads a dashboard: tasks due today, items waiting on people for 7+ days, unprocessed inbox items. Claude already knows what matters.
+Telegram: your morning plan is ready. 3 P1 items, 2 follow-ups auto-drafted for stale waiting items. A task on Sean is now at 12 days. You haven't opened your laptop.
 </div>
 <div class="moment" markdown>
-<span class="time">8:31am — /morning</span>
+<span class="time">9:00am — open Claude Code</span>
 
-Claude reads your tasks, applies leverage scoring (Impact / Effort), checks strategic priorities from MEMORY.md, and generates a prioritised daily plan.
+The session-start hook loads a dashboard: tasks due today, items waiting on people, unprocessed inbox files, high-leverage quick wins. Yesterday's context is already in memory.
 </div>
 <div class="moment" markdown>
-<span class="time">9:00am — /brief</span>
+<span class="time">9:15am — /brief #project-a Alex</span>
 
-Before a meeting, Claude pulls the last 3 meeting notes, open tasks, waiting items, and stakeholder preferences into a one-pager. Includes "what NOT to say" based on political context.
+Last 3 meeting notes, open tasks, waiting items, stakeholder preferences. A "what NOT to say" section based on political context. Two minutes.
 </div>
 <div class="moment" markdown>
-<span class="time">11:00am — /challenge</span>
+<span class="time">10:00am — meeting</span>
 
-Red-team a strategy doc before sharing it with the board. Five parallel analysis lenses run simultaneously: logical holes, evidence gaps, audience fit, political risk, blind spot check.
+MacWhisper recording the call. You focus on the conversation.
 </div>
 <div class="moment" markdown>
-<span class="time">2:00pm — /transform</span>
+<span class="time">10:45am — drop transcript, walk away</span>
 
-Drop this morning's meeting transcript in the inbox. Claude extracts decisions, action items, and insights. Raw file and processed summary land in the right theme folder. Actions go straight to tasks.md.
+The heartbeat auto-processes it: decisions, actions, insights extracted. Actions land in tasks.md tagged to the right theme. You didn't run a single command.
+</div>
+<div class="moment" markdown>
+<span class="time">11:30am — /challenge the board paper</span>
+
+Five parallel lenses tear it apart simultaneously. Verdict: Needs Work. Top issue: execution mechanics missing (your known blind spot, caught automatically). Three fixes pushed to your task list.
+</div>
+<div class="moment" markdown>
+<span class="time">2:00pm — /draft linkedin</span>
+
+Voice-calibrated against your real writing samples. Anti-slop enforced. 8 variants generated. Pick one. Copy to clipboard as rich HTML. Paste into LinkedIn.
 </div>
 <div class="moment" markdown>
 <span class="time">5:00pm — session ends</span>
 
-The stop hook auto-commits all changes. Search reindexes. Nothing is lost.
+Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5/7 planned items done. Tomorrow's top 3. That waiting item on Sean is flagged for escalation.
 </div>
 <div class="moment" markdown>
 <span class="time">Sunday — /weekly</span>
 
-7 parallel subagents: task audit, stale item cleanup, memory review, cross-theme connection discovery, improvement suggestions. The system gets smarter every week.
+7 parallel subagents: task audit, stale item cleanup, memory refresh, cross-theme connection discovery, self-improvement suggestions, stakeholder heatmap, decision digest. The system gets smarter every week.
 </div>
 </div>
 
-<p class="section-label">Explore</p>
+<p class="section-label">The full stack</p>
 
-## Where to start
+## What powers it
+
+<div class="grid" markdown>
+<div class="card" markdown>
+<div class="card-icon">🖥️</div>
+
+### Claude Code
+
+The brain. Deep work sessions, skill execution, document iteration, search, analysis. Where the hard thinking happens.
+
+[Architecture →](architecture/overview.md)
+</div>
+<div class="card" markdown>
+<div class="card-icon">📱</div>
+
+### Obsidian
+
+Mobile vault access. Read status docs, browse meeting notes, quick capture from your phone. Same vault, synced via iCloud.
+
+[Folder structure →](architecture/folder-structure.md)
+</div>
+<div class="card" markdown>
+<div class="card-icon">🤖</div>
+
+### OpenClaw + Telegram
+
+Always-on daemon on a second machine. Hourly heartbeat, inbox processing, waiting alerts, mobile task capture, vault queries from your phone.
+
+[Hooks & automation →](architecture/hooks.md)
+</div>
+<div class="card" markdown>
+<div class="card-icon">🎙️</div>
+
+### MacWhisper
+
+Meeting transcription. Record, export, drop in inbox. The system handles the rest - extraction, routing, action items.
+
+[Transform skill →](skills/transform.md)
+</div>
+<div class="card" markdown>
+<div class="card-icon">⚡</div>
+
+### Skills <span class="badge">15 built</span>
+
+Daily planning, meeting prep, red-team review, content drafting, weekly maintenance, Gmail search, transcript processing, and more.
+
+[Browse skills →](skills/morning.md)
+</div>
+<div class="card" markdown>
+<div class="card-icon">🔍</div>
+
+### Three-Mode Search
+
+Semantic (concepts), BM25 (keywords), grep (exact). Run in parallel. Everything you've ever written, searchable in seconds.
+
+[Search architecture →](architecture/search.md)
+</div>
+</div>
+
+<p class="section-label">Go deeper</p>
+
+## Explore
 
 <div class="grid" markdown>
 <div class="card" markdown>
@@ -176,18 +254,9 @@ Clone the template, set up search, wire the hooks, customise CLAUDE.md, run your
 
 ### Architecture
 
-How the six layers work together: vault structure, skills, hooks, memory, search, and the self-improvement loop.
+How the layers work together: vault structure, skills, hooks, memory, search, self-improvement, and the always-on daemon.
 
 [Deep dive →](architecture/overview.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">⚡</div>
-
-### Skills <span class="badge">7 published</span>
-
-Daily planning, document challenge, weekly review, content transform, meeting briefs, changelogs, voice-calibrated drafting.
-
-[Browse skills →](skills/morning.md)
 </div>
 <div class="card" markdown>
 <div class="card-icon">📖</div>
@@ -197,15 +266,6 @@ Daily planning, document challenge, weekly review, content transform, meeting br
 The full CLAUDE.md template, task format specification, anti-slop rules, and the rules system.
 
 [Reference docs →](reference/quartermaster-md.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">👤</div>
-
-### About
-
-Who built this, why it exists, and the thesis behind it.
-
-[Read more →](about.md)
 </div>
 </div>
 
