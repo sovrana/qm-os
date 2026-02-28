@@ -155,15 +155,28 @@ body[data-md-color-scheme] .md-content {
 }
 
 .md-typeset .grid .card {
+  position: relative;
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 0.4rem;
   padding: 1.1rem 1.3rem;
   transition: border-color 0.2s, transform 0.15s;
+  cursor: pointer;
 }
 
 .md-typeset .grid .card:hover {
   border-color: var(--md-accent-fg-color);
   transform: translateY(-1px);
+}
+
+/* Make the last link in each card stretch to cover the entire card */
+.md-typeset .grid .card > p:last-child a {
+  position: static;
+}
+
+.md-typeset .grid .card > p:last-child a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .md-typeset .grid .card .card-icon {
