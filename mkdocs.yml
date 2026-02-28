@@ -72,7 +72,7 @@ extra_css:
 
 nav:
   - Home: index.md
-  - New to Claude Code?: new-to-claude-code.md
+  - Get Started: new-to-claude-code.md
   - What's Different: what-makes-this-different.md
   - Quickstart: quickstart.md
   - Architecture:

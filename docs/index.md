@@ -23,12 +23,13 @@ I run AI transformation at [Warburg Pincus](https://www.warburgpincus.com/). Fiv
 
 ## Built for people who
 
-- **Run on Claude Code daily** and are tired of stateless conversations
+- **Use AI for real work** - whether ChatGPT, Claude, or Claude Code - and want something that compounds instead of resetting every session
 - **Manage multiple workstreams** with different stakeholders, contexts, and communication styles
 - **Process meetings and transcripts** and need decisions, actions, and insights extracted automatically
 - **Want an AI that works between sessions** - processing your inbox, flagging slipping tasks, sending you a morning plan before you open your laptop
+- **Build AI systems** and want battle-tested architecture patterns for memory, search, self-improvement, and agent orchestration
 
-Not for you if you're looking for a chatbot wrapper, a coding assistant, or a one-click productivity hack. This is a system you build and grow over weeks.
+Whether you're new to Claude Code or pushing its limits, [pick your starting point →](new-to-claude-code.md)
 
 <p class="section-label">What makes this different</p>
 
