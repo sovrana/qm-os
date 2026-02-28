@@ -224,6 +224,15 @@ Semantic (concepts), BM25 (keywords), grep (exact). Run in parallel. Everything 
 
 [Search architecture →](architecture/search.md)
 </div>
+<div class="card" markdown>
+<div class="card-icon">🏗️</div>
+
+### Six-Layer Architecture
+
+Vault, skills, hooks, memory, search, and a self-improvement loop that rewrites its own rules. Each layer independent. Together they compound.
+
+[Deep dive →](architecture/overview.md)
+</div>
 </div>
 
 <p class="section-label">Go deeper</p>
@@ -248,15 +257,6 @@ Start here if you haven't used Claude Code before. We'll point you to the best b
 Clone the template, set up search, wire the hooks, customise CLAUDE.md, run your first `/morning`. 30 minutes.
 
 [Get started →](quickstart.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">🏗️</div>
-
-### Architecture
-
-How the layers work together: vault structure, skills, hooks, memory, search, self-improvement, and the always-on daemon.
-
-[Deep dive →](architecture/overview.md)
 </div>
 <div class="card" markdown>
 <div class="card-icon">📖</div>
