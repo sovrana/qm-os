@@ -7,7 +7,7 @@ hide:
 
 # Quartermaster
 
-<p class="subtitle">Stop re-explaining context to your AI. Every correction becomes a permanent rule. Every session builds on the last.</p>
+<p class="subtitle">An AI operating system that gets smarter every time you use it. Designed by a business exec, for business execs. No engineers were distracted in the making of this.</p>
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
 [What's Different](what-makes-this-different.md){ .md-button }
@@ -16,7 +16,7 @@ hide:
 </div>
 
 <div class="intro-note" markdown>
-Built by [Marc Lien](about.md), an AI transformation lead inside a global PE firm. I manage five workstreams across multiple portfolio companies. Every morning I'd open Claude Code and spend ten minutes re-explaining context it had yesterday. So I built a system that doesn't forget. 8 weeks of daily production use. Open source. [Read the backstory →](about.md)
+Built by [Marc Lien](about.md), an AI transformation lead inside a global PE firm. Not a developer. I manage five workstreams across multiple portfolio companies and I needed an AI assistant that actually remembers what I told it yesterday. So I built one. 8 weeks of daily production use. Open source. [Read the backstory →](about.md)
 </div>
 
 <p class="section-label">Who this is for</p>
