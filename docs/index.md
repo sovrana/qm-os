@@ -16,7 +16,7 @@ hide:
 </div>
 
 <div class="intro-note" markdown>
-I run AI transformation for a global PE firm. Five workstreams, multiple portfolio companies, no engineering team. I needed an AI that works while I sleep and gets better without me asking. So I built one. 8 weeks of production use. Open source. [Who I am →](about.md)
+I run AI transformation at [Warburg Pincus](https://www.warburgpincus.com/). Five workstreams, multiple portfolio companies, no engineering team. Before that: McKinsey, then running billion-pound businesses at Lloyds. I needed an AI that works while I sleep and gets better without me asking. So I built one. 8 weeks of production use. Open source. [Who I am →](about.md)
 </div>
 
 <p class="section-label">Who this is for</p>
@@ -164,6 +164,29 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 7 parallel subagents: task audit, stale item cleanup, memory refresh, cross-theme connection discovery, self-improvement suggestions, stakeholder heatmap, decision digest. The system gets smarter every week.
 </div>
 </div>
+
+<p class="section-label">Type a command, get a result</p>
+
+## 15 skills built in
+
+| Command | What it does | Time |
+|---------|-------------|------|
+| **`/morning`** | Prioritised daily plan with leverage scoring and draft follow-ups for stale items | ~5 min |
+| **`/brief`** | Pre-meeting one-pager: last 3 meetings, open tasks, "what NOT to say" | ~2 min |
+| **`/challenge`** | 5 parallel red-team lenses: audience fit, logic, contradictions, blind spots, pre-mortem | ~5 min |
+| **`/transform`** | Process transcript into structured knowledge: decisions, actions, insights, routing | ~5 min |
+| **`/draft`** | Voice-calibrated outbound content: LinkedIn, emails, memos. Batch options for short-form | ~5 min |
+| **`/weekly`** | Full system audit: 7 parallel subagents for task cleanup, memory refresh, self-improvement | ~30 min |
+| **`/changelog`** | View or log iteration decisions. Contradiction detection built in | ~1 min |
+| **`/inbox`** | Process captures and route to tasks, themes, or reference | ~5 min |
+| **`/show`** | Filtered task views by theme, person, or waiting status | ~1 min |
+| **`/gmail`** | Natural language Gmail search with full body text | ~2 min |
+| **`/prep`** | Deep research briefing: vault search, stakeholder adaptation, context assembly | ~10 min |
+| **`/publish`** | Sync to public repo with full PII sanitisation and privacy gate | ~5 min |
+
+Plus `/evening`, `/school-emails`, `/clipboard`, and custom skills you build yourself.
+
+[Browse all skills →](skills/morning.md)
 
 <p class="section-label">The full stack</p>
 

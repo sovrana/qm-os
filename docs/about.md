@@ -2,9 +2,9 @@
 
 ## Who Built This
 
-Marc Lien. I run AI transformation programmes for professional services businesses inside a global private equity firm. Not a developer. I manage five concurrent workstreams across multiple portfolio companies and needed an AI assistant that actually compounds.
+Marc Lien. Senior Advisor at [Warburg Pincus](https://www.warburgpincus.com/), focused on acquiring and scaling an AI-led financial services platform. Before PE: 11 years at McKinsey (financial services strategy), then Managing Director and CEO of MBNA at Lloyds Banking Group, running billion-pound consumer and business banking divisions. Harvard MBA with Distinction. Engineering degree underneath it all.
 
-Before PE, 15 years in operational architecture and business model transformation. The common thread: turning messy strategic problems into systematic, repeatable solutions.
+I manage five concurrent workstreams across multiple portfolio companies. No engineering team. I needed an AI assistant that actually compounds.
 
 ## Why This Exists
 
