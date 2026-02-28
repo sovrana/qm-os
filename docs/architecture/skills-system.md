@@ -42,6 +42,32 @@ Below the frontmatter, the skill body defines the procedure: what to read, how t
 
 Most skills follow the same three-phase structure:
 
+```mermaid
+sequenceDiagram
+    actor User
+    participant Skill as SKILL.md
+    participant Vault as Vault Files
+    participant Output as Output File
+
+    User->>Skill: /morning
+    activate Skill
+    Note over Skill: Phase 1: Gather
+    par Read in parallel
+        Skill->>Vault: tasks.md
+        Skill->>Vault: MEMORY.md
+        Skill->>Vault: theme/status.md
+        Skill->>Vault: calibration-log.md
+    end
+    Note over Skill: Phase 2: Analyse
+    Skill->>Skill: Apply leverage scoring
+    Skill->>Skill: Weight by strategic priority
+    Skill->>Skill: Draft follow-ups for stale items
+    Note over Skill: Phase 3: Synthesise
+    Skill->>Output: Write daily-plan.md
+    Skill->>User: Present prioritised plan
+    deactivate Skill
+```
+
 1. **Gather context** - Read vault files in parallel (tasks, theme status, memory)
 2. **Analyse** - Apply domain logic (prioritisation, scoring, pattern matching)
 3. **Output** - Write results to a specific file or present to the user

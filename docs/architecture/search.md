@@ -15,6 +15,25 @@ Three modes, each with a clear use case. The decision table makes selection auto
 
 ## How
 
+### Query Routing
+
+```mermaid
+flowchart TD
+    Q[Query arrives] --> K{Know the<br>exact words?}
+    K -->|Yes| GREP[Grep / Glob<br>Instant]
+    K -->|No| C{Know the<br>keywords?}
+    C -->|Yes| BM25[BM25 Search<br>~200ms]
+    C -->|No| SEM[Semantic Search<br>~1-2s]
+    Q --> R{Research<br>query?}
+    R -->|Yes| PAR[Run Semantic +<br>Grep in parallel]
+    PAR --> MERGE[Merge results]
+
+    style GREP fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style BM25 fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style SEM fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style PAR fill:#1a3a4a,stroke:#4fd1c5,color:#4fd1c5
+```
+
 ### Mode 1: Semantic Search (MCP Server)
 
 Built as a Model Context Protocol server. Uses `sentence-transformers` (all-MiniLM-L6-v2, 384 dimensions) with numpy-based vector storage. No database dependency.

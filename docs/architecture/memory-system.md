@@ -15,6 +15,24 @@ Six files, not one, because different types of memory have different update cade
 
 ## How
 
+### How Memory Flows
+
+```mermaid
+flowchart LR
+    A[Session work] --> B[Correction or<br>preference expressed]
+    B --> C[calibration-log.md<br>append entry]
+    C --> D{Same pattern<br>3+ times?}
+    D -->|No| E[Stays in log<br>keeps compounding]
+    D -->|Yes| F[Graduate to<br>CLAUDE.md rule]
+    F --> G[Default behaviour<br>in all future sessions]
+
+    style C fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style F fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style G fill:#1a3a4a,stroke:#4fd1c5,color:#4fd1c5
+```
+
+The system discovers its own operating rules through use, not upfront design.
+
 ### The Six Files
 
 | File | Purpose | Update Cadence |

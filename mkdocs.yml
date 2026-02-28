@@ -72,9 +72,10 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Get Started: new-to-claude-code.md
   - What's Different: what-makes-this-different.md
-  - Quickstart: quickstart.md
+  - Get Started:
+    - Choose Your Path: new-to-claude-code.md
+    - Quickstart: quickstart.md
   - Architecture:
     - Overview: architecture/overview.md
     - Folder Structure: architecture/folder-structure.md

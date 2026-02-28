@@ -13,6 +13,38 @@ Numbered prefixes solve two problems at once. First, they force consistent order
 
 ## How
 
+### File Lifecycle
+
+Content flows through folders as it moves from raw capture to permanent reference:
+
+```mermaid
+stateDiagram-v2
+    direction LR
+    [*] --> 00_Inbox: Capture
+    00_Inbox --> 01_Todos: Extract tasks
+    00_Inbox --> 02_Themes: Route to theme
+    00_Inbox --> 03_Reference: File as reference
+    01_Todos --> 02_Themes: Work on task
+    02_Themes --> 03_Reference: Archive completed work
+    00_Inbox --> 99_System: Archive original
+    02_Themes --> 99_System: Log processed output
+
+    state 00_Inbox {
+        direction TB
+        Transcripts
+        Emails
+        Voice_captures
+    }
+    state 02_Themes {
+        direction TB
+        meetings
+        context
+        processed
+    }
+```
+
+Moving a file between folders *is* the processing step. The numbered prefixes encode workflow stage.
+
 ### Top-Level Folders
 
 | Folder | Purpose | Update Cadence |
