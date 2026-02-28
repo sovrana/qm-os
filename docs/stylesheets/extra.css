@@ -107,6 +107,30 @@ body[data-md-color-scheme] .md-content {
   line-height: 1.6;
 }
 
+/* --- Demo GIF --- */
+.md-typeset .demo-gif {
+  margin: 2rem 0 2.5rem;
+  text-align: center;
+}
+
+.md-typeset .demo-gif img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.md-typeset .demo-caption {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset .demo-caption code {
+  color: var(--md-accent-fg-color);
+  background: none;
+  font-size: 0.9rem;
+}
+
 /* --- Feature blocks (the 5 things) --- */
 .md-typeset .features {
   display: grid;

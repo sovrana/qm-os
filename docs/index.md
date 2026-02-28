@@ -19,6 +19,12 @@ hide:
 I run AI transformation at [Warburg Pincus](https://www.warburgpincus.com/). Five workstreams, multiple portfolio companies, no engineering team. Before that: McKinsey, then running billion-pound businesses at Lloyds. I needed an AI that works while I sleep and gets better without me asking. So I built one. 8 weeks of production use. Open source. [Who I am →](about.md)
 </div>
 
+<div class="demo-gif" markdown>
+<p class="demo-caption"><code>/challenge</code> tearing apart a strategy document - 5 parallel lenses, verdict in 2 minutes</p>
+
+![/challenge demo - 5 parallel red-team agents analysing a document](assets/challenge-demo.gif)
+</div>
+
 <p class="section-label">Who this is for</p>
 
 ## Built for people who
