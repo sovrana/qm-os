@@ -105,7 +105,7 @@ git clone https://github.com/sovrana/qm-os.git
 cp -r qm-os/template/ ~/my-vault/ && cd ~/my-vault/
 
 # 2. Customise CLAUDE.md (your name, your blind spots, your stakeholders)
-# Search for CUSTOMISE — there are ~20 marked sections
+# Search for CUSTOMISE - there are ~20 marked sections
 
 # 3. Run your first morning plan
 claude /morning
@@ -119,47 +119,47 @@ Needs: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) + Python 3.
 
 <div class="timeline" markdown>
 <div class="moment" markdown>
-<span class="time">6:30am — phone buzzes</span>
+<span class="time">6:30am - phone buzzes</span>
 
 Telegram: your morning plan is ready. 3 P1 items, 2 follow-ups auto-drafted for stale waiting items. A task on Sean is now at 12 days. You haven't opened your laptop.
 </div>
 <div class="moment" markdown>
-<span class="time">9:00am — open Claude Code</span>
+<span class="time">9:00am - open Claude Code</span>
 
 The session-start hook loads a dashboard: tasks due today, items waiting on people, unprocessed inbox files, high-leverage quick wins. Yesterday's context is already in memory.
 </div>
 <div class="moment" markdown>
-<span class="time">9:15am — /brief #project-a Alex</span>
+<span class="time">9:15am - /brief #project-a Alex</span>
 
 Last 3 meeting notes, open tasks, waiting items, stakeholder preferences. A "what NOT to say" section based on political context. Two minutes.
 </div>
 <div class="moment" markdown>
-<span class="time">10:00am — meeting</span>
+<span class="time">10:00am - meeting</span>
 
 MacWhisper recording the call. You focus on the conversation.
 </div>
 <div class="moment" markdown>
-<span class="time">10:45am — drop transcript, walk away</span>
+<span class="time">10:45am - drop transcript, walk away</span>
 
 The heartbeat auto-processes it: decisions, actions, insights extracted. Actions land in tasks.md tagged to the right theme. You didn't run a single command.
 </div>
 <div class="moment" markdown>
-<span class="time">11:30am — /challenge the board paper</span>
+<span class="time">11:30am - /challenge the board paper</span>
 
 Five parallel lenses tear it apart simultaneously. Verdict: Needs Work. Top issue: execution mechanics missing (your known blind spot, caught automatically). Three fixes pushed to your task list.
 </div>
 <div class="moment" markdown>
-<span class="time">2:00pm — /draft linkedin</span>
+<span class="time">2:00pm - /draft linkedin</span>
 
 Voice-calibrated against your real writing samples. Anti-slop enforced. 8 variants generated. Pick one. Copy to clipboard as rich HTML. Paste into LinkedIn.
 </div>
 <div class="moment" markdown>
-<span class="time">5:00pm — session ends</span>
+<span class="time">5:00pm - session ends</span>
 
 Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5/7 planned items done. Tomorrow's top 3. That waiting item on Sean is flagged for escalation.
 </div>
 <div class="moment" markdown>
-<span class="time">Sunday — /weekly</span>
+<span class="time">Sunday - /weekly</span>
 
 7 parallel subagents: task audit, stale item cleanup, memory refresh, cross-theme connection discovery, self-improvement suggestions, stakeholder heatmap, decision digest. The system gets smarter every week.
 </div>
