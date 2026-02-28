@@ -7,20 +7,13 @@ Claude Code is powerful but stateless. Every conversation starts from zero. Quar
 [Get Started](quickstart.md){ .md-button .md-button--primary }
 [What Makes This Different](what-makes-this-different.md){ .md-button }
 
-## The short version
+## Five things nothing else does
 
-10 things this system does that vanilla Claude Code doesn't:
-
-1. **Self-improving instructions** - Corrections auto-graduate into permanent rules
-2. **Six-file memory** - Strategic state, voice samples, stakeholder postures, recent decisions, cross-domain connections, calibration patterns
-3. **100-round document iteration** - Auto-changelog, rejection tracking, "approval ≠ closure"
-4. **Voice matching** - Calibrated against your real writing samples, not "professional tone"
-5. **Anti-slop enforcement** - 40+ banned words, phrases, and structures. Measurable output quality.
-6. **Session-type pre-flights** - Financial session starts a numbers table. Legal review flags missing cross-references. Automatically.
-7. **Three-mode search** - Semantic + keyword + exact match over your entire vault
-8. **Stakeholder-adapted output** - Same analysis, different packaging per audience
-9. **Cross-domain connections** - When work in one area changes the calculus of another, the system captures it
-10. **Privacy-first publishing** - Build with real data. Publish safely. This is how this site exists.
+1. **It gets smarter every time you use it** - Corrections auto-graduate into permanent rules. The system rewrites its own instructions based on your behaviour.
+2. **It knows your context before you explain it** - Six-file memory, session-type pre-flights, stakeholder-adapted output. You never repeat yourself.
+3. **It writes like you, not like AI** - Voice-matched against your real writing samples. 40+ banned AI-slop words and structures.
+4. **It makes your knowledge searchable** - Three-mode search across everything you've ever written. Concepts, keywords, and exact patterns.
+5. **It publishes itself safely** - Build with real data. The privacy pipeline sanitises everything before it touches GitHub. This is how this site exists.
 
 [Read the full breakdown →](what-makes-this-different.md)
 
