@@ -214,7 +214,7 @@ Mobile vault access. Read status docs, browse meeting notes, quick capture from 
 
 Always-on daemon on a second machine. Hourly heartbeat, inbox processing, waiting alerts, mobile task capture, vault queries from your phone.
 
-[Hooks & automation →](architecture/hooks.md)
+[How it works →](architecture/always-on.md)
 </div>
 <div class="card" markdown>
 <div class="card-icon">🎙️</div>

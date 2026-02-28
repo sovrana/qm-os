@@ -99,6 +99,7 @@ Each layer has its own page with implementation details and customisation guides
 - [Folder Structure](folder-structure.md) - The numbered-prefix pattern and theme layout
 - [Skills System](skills-system.md) - SKILL.md format and the gather-analyse-synthesise pattern
 - [Three-Hook Automation](hooks.md) - Context load, auto-commit, and reindex wiring
+- [Always-On Daemon](always-on.md) - OpenClaw, Telegram, and the two-machine architecture
 - [Six-File Memory](memory-system.md) - Persistent memory across sessions
 - [Three-Mode Search](search.md) - Semantic, BM25, and exact match in parallel
 - [Self-Improvement Loop](self-improvement.md) - BEADs, calibration log, and the graduation pattern

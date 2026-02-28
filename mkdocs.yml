@@ -81,6 +81,7 @@ nav:
     - Folder Structure: architecture/folder-structure.md
     - Skills System: architecture/skills-system.md
     - Hooks: architecture/hooks.md
+    - Always-On Daemon: architecture/always-on.md
     - Memory System: architecture/memory-system.md
     - Search: architecture/search.md
     - Self-Improvement: architecture/self-improvement.md
