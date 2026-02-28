@@ -1,15 +1,30 @@
 # Quartermaster
 
-I built an agentic operating system for my work. Here's how.
+An AI operating system that gets smarter every time you use it.
 
-Claude Code is powerful but stateless. Every conversation starts from zero. I needed something that compounds - where every correction becomes a permanent rule, every session builds institutional memory, and workflows that took 30 minutes shrink to 5.
-
-Quartermaster is the result: 7 published skills, a three-hook automation layer, a six-file persistent memory system, local semantic search over a markdown vault, and a self-improvement loop that promotes recurring patterns into system rules.
+Claude Code is powerful but stateless. Every conversation starts from zero. Quartermaster fixes that. Corrections become permanent rules. Sessions build institutional memory. Workflows that took 30 minutes shrink to 5. And the whole system compounds - after a month, it knows your preferences better than most human assistants.
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
-[View on GitHub](https://github.com/sovrana/qm-os){ .md-button }
+[What Makes This Different](what-makes-this-different.md){ .md-button }
 
-## What a Day Looks Like
+## The short version
+
+10 things this system does that vanilla Claude Code doesn't:
+
+1. **Self-improving instructions** - Corrections auto-graduate into permanent rules
+2. **Six-file memory** - Strategic state, voice samples, stakeholder postures, recent decisions, cross-domain connections, calibration patterns
+3. **100-round document iteration** - Auto-changelog, rejection tracking, "approval ≠ closure"
+4. **Voice matching** - Calibrated against your real writing samples, not "professional tone"
+5. **Anti-slop enforcement** - 40+ banned words, phrases, and structures. Measurable output quality.
+6. **Session-type pre-flights** - Financial session starts a numbers table. Legal review flags missing cross-references. Automatically.
+7. **Three-mode search** - Semantic + keyword + exact match over your entire vault
+8. **Stakeholder-adapted output** - Same analysis, different packaging per audience
+9. **Cross-domain connections** - When work in one area changes the calculus of another, the system captures it
+10. **Privacy-first publishing** - Build with real data. Publish safely. This is how this site exists.
+
+[Read the full breakdown →](what-makes-this-different.md)
+
+## What a day looks like
 
 **8:30am** - Open Claude Code. The session-start hook loads a dashboard: 3 tasks due today, 2 items waiting on people for 7+ days, 14 unprocessed inbox items. Claude already knows what matters.
 
@@ -23,48 +38,13 @@ Quartermaster is the result: 7 published skills, a three-hook automation layer, 
 
 **Sunday** - `/weekly` runs 7 parallel subagents: task audit, stale item cleanup, memory review, cross-theme connection discovery, improvement suggestions, and more. The system gets smarter every week.
 
-## Architecture
+## This site
 
-```mermaid
-graph TB
-    subgraph Interface["Interface Layer"]
-        CC["Claude Code<br/>(Deep Work)"]
-        Mobile["Mobile Capture<br/>(Obsidian/Telegram)"]
-    end
-
-    subgraph Skills["Skills Layer (7 published)"]
-        Morning["/morning"]
-        Challenge["/challenge"]
-        Weekly["/weekly"]
-        More["+ 4 more"]
-    end
-
-    subgraph Hooks["Three-Hook Automation"]
-        Start["session-start<br/>context load"]
-        Stop["session-stop<br/>auto-commit"]
-        PostWrite["post-write<br/>reindex"]
-    end
-
-    subgraph Memory["Six-File Memory"]
-        MEM["MEMORY.md + 5 context files"]
-    end
-
-    subgraph Search["Three-Mode Search"]
-        Semantic["Semantic (MCP)"]
-        BM25["BM25 (Keyword)"]
-        Grep["Grep (Exact)"]
-    end
-
-    CC --> Skills
-    Skills --> Memory
-    Skills --> Search
-    Hooks --> CC
-    Mobile --> CC
-```
-
-## This Site
+**[New to Claude Code?](new-to-claude-code.md)** - Start here if you haven't used Claude Code before.
 
 **[Quickstart](quickstart.md)** - Get running in 30 minutes.
+
+**[What Makes This Different](what-makes-this-different.md)** - The 10 things no other setup does.
 
 **[Architecture](architecture/overview.md)** - How the six layers work together.
 
