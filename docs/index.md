@@ -1,125 +1,170 @@
-<div class="hero" markdown>
+---
+hide:
+  - toc
+---
+
+<div class="hero-intro" markdown>
 
 # Quartermaster
 
-An AI operating system that gets smarter every time you use it.
-
-Claude Code is powerful but stateless. Quartermaster fixes that. Corrections become permanent rules. Sessions build institutional memory. The whole system compounds - after a month, it knows your preferences better than most human assistants.
+<p class="subtitle">An AI operating system that gets smarter every time you use it.</p>
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
-[What Makes This Different](what-makes-this-different.md){ .md-button }
+[What's Different](what-makes-this-different.md){ .md-button }
+[GitHub](https://github.com/sovrana/qm-os){ .md-button }
 
 </div>
 
-<div class="stats" markdown>
-<div class="stat" markdown>
-<strong>8 weeks</strong>
-<span>daily production use</span>
+<div class="intro-note" markdown>
+Built by [Marc Lien](about.md), an AI transformation lead inside a global PE firm. I manage five workstreams across multiple portfolio companies. Every morning I'd open Claude Code and spend ten minutes re-explaining context it had yesterday. So I built a system that doesn't forget. 8 weeks of daily production use. Open source. [Read the backstory →](about.md)
 </div>
-<div class="stat" markdown>
-<strong>7 skills</strong>
-<span>published & documented</span>
-</div>
-<div class="stat" markdown>
-<strong>6 memory files</strong>
-<span>persistent context</span>
-</div>
-<div class="stat" markdown>
-<strong>3 search modes</strong>
-<span>over your entire vault</span>
-</div>
-</div>
+
+<p class="section-label">What makes this different</p>
 
 ## Five things nothing else does
 
-1. **It gets smarter every time you use it** - Corrections auto-graduate into permanent rules. The system rewrites its own instructions based on your behaviour.
-2. **It knows your context before you explain it** - Six-file memory, session-type pre-flights, stakeholder-adapted output. You never repeat yourself.
-3. **It writes like you, not like AI** - Voice-matched against your real writing samples. 40+ banned AI-slop words and structures.
-4. **It makes your knowledge searchable** - Three-mode search across everything you've ever written. Concepts, keywords, and exact patterns.
-5. **It publishes itself safely** - Build with real data. The privacy pipeline sanitises everything before it touches GitHub. This is how this site exists.
+<div class="features" markdown>
+<div class="feature" markdown>
+<div class="feature-icon">🔄</div>
+<div class="feature-text" markdown>
+<strong>It gets smarter every time you use it</strong>
+<span>Corrections auto-graduate into permanent rules. The system rewrites its own instructions based on your behaviour. After a month, it knows your preferences better than most human assistants.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">🧠</div>
+<div class="feature-text" markdown>
+<strong>It knows your context before you explain it</strong>
+<span>Six-file memory architecture, session-type pre-flights, stakeholder-adapted output. Financial session starts a numbers table. Legal review flags missing cross-references. Automatically.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">✍️</div>
+<div class="feature-text" markdown>
+<strong>It writes like you, not like AI</strong>
+<span>Voice-matched against your real writing samples. 40+ banned AI-slop words and structures. No "delve." No em dashes. Output reads like a human wrote it.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">🔍</div>
+<div class="feature-text" markdown>
+<strong>It makes your knowledge searchable</strong>
+<span>Three-mode search across everything you've ever written. Semantic finds concepts. Keywords rank matches. Grep finds exact patterns. Run them in parallel.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">🔒</div>
+<div class="feature-text" markdown>
+<strong>It publishes itself safely</strong>
+<span>Build with real names and real numbers. The privacy pipeline sanitises everything before it touches GitHub. This is how this site exists.</span>
+</div>
+</div>
+</div>
 
 [Read the full breakdown →](what-makes-this-different.md)
 
+<p class="section-label">A typical day</p>
+
 ## What a day looks like
 
-**8:30am** - Open Claude Code. The session-start hook loads a dashboard: 3 tasks due today, 2 items waiting on people for 7+ days, 14 unprocessed inbox items. Claude already knows what matters.
+<div class="timeline" markdown>
+<div class="moment" markdown>
+<span class="time">8:30am</span>
 
-**8:31am** - `/morning`. Claude reads your tasks, applies leverage scoring (Impact / Effort), checks strategic priorities from MEMORY.md, and generates a prioritised daily plan. High-impact, low-effort items surface first.
+Open Claude Code. The session-start hook loads a dashboard: tasks due today, items waiting on people for 7+ days, unprocessed inbox items. Claude already knows what matters.
+</div>
+<div class="moment" markdown>
+<span class="time">8:31am — /morning</span>
 
-**9:00am** - Before a meeting, `/brief #project-a Alex`. Claude pulls the last 3 meeting notes, open tasks, waiting items, and stakeholder preferences into a one-pager. Includes "what NOT to say" based on political context.
+Claude reads your tasks, applies leverage scoring (Impact / Effort), checks strategic priorities from MEMORY.md, and generates a prioritised daily plan.
+</div>
+<div class="moment" markdown>
+<span class="time">9:00am — /brief</span>
 
-**11:00am** - `/challenge` on a strategy doc before sharing it with the board. Five parallel analysis lenses run simultaneously: logical holes, evidence gaps, audience fit, political risk, blind spot check.
+Before a meeting, Claude pulls the last 3 meeting notes, open tasks, waiting items, and stakeholder preferences into a one-pager. Includes "what NOT to say" based on political context.
+</div>
+<div class="moment" markdown>
+<span class="time">11:00am — /challenge</span>
 
-**5:00pm** - Session ends. The stop hook auto-commits all changes. Search reindexes. Nothing is lost.
+Red-team a strategy doc before sharing it with the board. Five parallel analysis lenses run simultaneously: logical holes, evidence gaps, audience fit, political risk, blind spot check.
+</div>
+<div class="moment" markdown>
+<span class="time">5:00pm — session ends</span>
 
-**Sunday** - `/weekly` runs 7 parallel subagents: task audit, stale item cleanup, memory review, cross-theme connection discovery, improvement suggestions, and more. The system gets smarter every week.
+The stop hook auto-commits all changes. Search reindexes. Nothing is lost.
+</div>
+<div class="moment" markdown>
+<span class="time">Sunday — /weekly</span>
 
-## Explore
+7 parallel subagents: task audit, stale item cleanup, memory review, cross-theme connection discovery, improvement suggestions. The system gets smarter every week.
+</div>
+</div>
+
+<p class="section-label">Explore</p>
+
+## Where to start
 
 <div class="grid" markdown>
-
 <div class="card" markdown>
+<div class="card-icon">💡</div>
 
 ### New to Claude Code?
 
-Never used Claude Code before? Start here. We'll point you to the best beginner resources, then bring you back for the operating system layer.
+Start here if you haven't used Claude Code before. We'll point you to the best beginner resources.
 
-[Start here →](new-to-claude-code.md)
-
+[The Essentials →](new-to-claude-code.md)
 </div>
-
 <div class="card" markdown>
+<div class="card-icon">🚀</div>
 
 ### Quickstart
 
-Get running in 30 minutes. Clone the template, set up semantic search, wire the hooks, customise CLAUDE.md, run your first `/morning`.
+Clone the template, set up search, wire the hooks, customise CLAUDE.md, run your first `/morning`. 30 minutes.
 
 [Get started →](quickstart.md)
-
 </div>
-
 <div class="card" markdown>
+<div class="card-icon">🏗️</div>
 
 ### Architecture
 
 How the six layers work together: vault structure, skills, hooks, memory, search, and the self-improvement loop.
 
 [Deep dive →](architecture/overview.md)
-
 </div>
-
 <div class="card" markdown>
+<div class="card-icon">⚡</div>
 
-### Skills
+### Skills <span class="badge">7 published</span>
 
-7 published skills documented in full. Daily planning, document challenge, weekly review, content transform, meeting briefs, changelogs, and voice-calibrated drafting.
+Daily planning, document challenge, weekly review, content transform, meeting briefs, changelogs, voice-calibrated drafting.
 
 [Browse skills →](skills/morning.md)
-
 </div>
-
 <div class="card" markdown>
+<div class="card-icon">📖</div>
 
 ### Reference
 
-The full CLAUDE.md template, task format specification, anti-slop rules, and rules system documentation.
+The full CLAUDE.md template, task format specification, anti-slop rules, and the rules system.
 
 [Reference docs →](reference/quartermaster-md.md)
-
 </div>
-
 <div class="card" markdown>
+<div class="card-icon">👤</div>
 
 ### About
 
 Who built this, why it exists, and the thesis behind it.
 
 [Read more →](about.md)
-
+</div>
 </div>
 
+<div class="cta-bar" markdown>
+**Stay in the loop.** I add new skills and documentation regularly. [Star the repo](https://github.com/sovrana/qm-os) so others can find it. Something broken or unclear? [Open an issue](https://github.com/sovrana/qm-os/issues) or [start a discussion](https://github.com/sovrana/qm-os/discussions).
 </div>
 
 <div class="feedback-line" markdown>
-Something broken or unclear? [Open an issue](https://github.com/sovrana/qm-os/issues) or [start a discussion](https://github.com/sovrana/qm-os/discussions).
+Built with [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Inspired by [Claude Blattman](https://claudeblattman.com).
 </div>
