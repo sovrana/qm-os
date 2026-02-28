@@ -7,7 +7,7 @@ hide:
 
 # Quartermaster
 
-<p class="subtitle">An AI operating system that gets smarter every time you use it.</p>
+<p class="subtitle">Stop re-explaining context to your AI. Every correction becomes a permanent rule. Every session builds on the last.</p>
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
 [What's Different](what-makes-this-different.md){ .md-button }
@@ -18,6 +18,17 @@ hide:
 <div class="intro-note" markdown>
 Built by [Marc Lien](about.md), an AI transformation lead inside a global PE firm. I manage five workstreams across multiple portfolio companies. Every morning I'd open Claude Code and spend ten minutes re-explaining context it had yesterday. So I built a system that doesn't forget. 8 weeks of daily production use. Open source. [Read the backstory →](about.md)
 </div>
+
+<p class="section-label">Who this is for</p>
+
+## Built for people who
+
+- **Run on Claude Code daily** and are tired of stateless conversations
+- **Manage multiple workstreams** with different stakeholders, contexts, and communication styles
+- **Write documents that go through 10+ rounds** of iteration, not one-shot prompts
+- **Want AI output that sounds like them**, not like a corporate chatbot
+
+Not for you if you're looking for a chatbot wrapper, a coding assistant, or a one-click productivity hack. This is a system you build and grow over weeks.
 
 <p class="section-label">What makes this different</p>
 
@@ -62,6 +73,24 @@ Built by [Marc Lien](about.md), an AI transformation lead inside a global PE fir
 </div>
 
 [Read the full breakdown →](what-makes-this-different.md)
+
+<p class="section-label">Get running in 3 steps</p>
+
+## Quick start
+
+```bash
+# 1. Clone and copy the template
+git clone https://github.com/sovrana/qm-os.git
+cp -r qm-os/template/ ~/my-vault/ && cd ~/my-vault/
+
+# 2. Customise CLAUDE.md (your name, your blind spots, your stakeholders)
+# Search for CUSTOMISE — there are ~20 marked sections
+
+# 3. Run your first morning plan
+claude /morning
+```
+
+Needs: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) + Python 3.10+ (for search) + Git. Full setup with semantic search and hooks takes [30 minutes →](quickstart.md)
 
 <p class="section-label">A typical day</p>
 
