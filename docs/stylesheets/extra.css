@@ -26,6 +26,28 @@
   --md-typeset-a-color: #319795;
 }
 
+/* --- Button visibility fix for dark theme --- */
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) {
+  border-color: rgba(79, 209, 197, 0.5);
+  color: #4fd1c5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary):hover {
+  border-color: #4fd1c5;
+  background-color: rgba(79, 209, 197, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  background-color: #4fd1c5;
+  border-color: #4fd1c5;
+  color: #1a1a2e;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover {
+  background-color: #38b2ac;
+  border-color: #38b2ac;
+}
+
 /* --- Announcement bar --- */
 .md-banner {
   font-size: 0.78rem;
