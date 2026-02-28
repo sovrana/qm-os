@@ -21,9 +21,9 @@ This gives you the full folder structure, all 7 skill files, hooks, rules, and a
 ## 2. Set Up Semantic Search
 
 ```bash
-cd ~/qm-os/brain-search
-python3 -m venv brain-search-env
-source brain-search-env/bin/activate
+cd ~/qm-os/qm-search
+python3 -m venv qm-search-env
+source qm-search-env/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -43,8 +43,8 @@ Add the semantic search server to your Claude Code settings. In `~/.claude/setti
 {
   "mcpServers": {
     "qm-search": {
-      "command": "/path/to/brain-search/brain-search-env/bin/python",
-      "args": ["/path/to/brain-search/mcp_server.py"],
+      "command": "/path/to/qm-search/qm-search-env/bin/python",
+      "args": ["/path/to/qm-search/mcp_server.py"],
       "env": {
         "QM_VAULT_PATH": "/path/to/my-vault"
       }

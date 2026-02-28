@@ -1,5 +1,5 @@
 site_name: Quartermaster
-site_description: An agentic operating system for Claude Code
+site_description: An AI operating system that gets smarter every time you use it. Built for executives and serious builders.
 site_url: https://sovrana.github.io/qm-os
 repo_url: https://github.com/sovrana/qm-os
 repo_name: sovrana/qm-os
@@ -20,17 +20,23 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
   font:
-    text: Inter
+    text: DM Sans
     code: JetBrains Mono
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.footer
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.prefetch
     - search.highlight
     - search.suggest
     - content.code.copy
     - content.code.annotate
+    - toc.follow
   icon:
     repo: fontawesome/brands/github
 
@@ -51,12 +57,16 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - def_list
   - toc:
       permalink: true
   - tables
 
 plugins:
   - search
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
@@ -91,4 +101,6 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/sovrana
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/sovrana
+      link: https://linkedin.com/in/marclien
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/marclien

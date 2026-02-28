@@ -1,11 +1,34 @@
+<div class="hero" markdown>
+
 # Quartermaster
 
 An AI operating system that gets smarter every time you use it.
 
-Claude Code is powerful but stateless. Every conversation starts from zero. Quartermaster fixes that. Corrections become permanent rules. Sessions build institutional memory. Workflows that took 30 minutes shrink to 5. And the whole system compounds - after a month, it knows your preferences better than most human assistants.
+Claude Code is powerful but stateless. Quartermaster fixes that. Corrections become permanent rules. Sessions build institutional memory. The whole system compounds - after a month, it knows your preferences better than most human assistants.
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
 [What Makes This Different](what-makes-this-different.md){ .md-button }
+
+</div>
+
+<div class="stats" markdown>
+<div class="stat" markdown>
+<strong>8 weeks</strong>
+<span>daily production use</span>
+</div>
+<div class="stat" markdown>
+<strong>7 skills</strong>
+<span>published & documented</span>
+</div>
+<div class="stat" markdown>
+<strong>6 memory files</strong>
+<span>persistent context</span>
+</div>
+<div class="stat" markdown>
+<strong>3 search modes</strong>
+<span>over your entire vault</span>
+</div>
+</div>
 
 ## Five things nothing else does
 
@@ -31,18 +54,72 @@ Claude Code is powerful but stateless. Every conversation starts from zero. Quar
 
 **Sunday** - `/weekly` runs 7 parallel subagents: task audit, stale item cleanup, memory review, cross-theme connection discovery, improvement suggestions, and more. The system gets smarter every week.
 
-## This site
+## Explore
 
-**[New to Claude Code?](new-to-claude-code.md)** - Start here if you haven't used Claude Code before.
+<div class="grid" markdown>
 
-**[Quickstart](quickstart.md)** - Get running in 30 minutes.
+<div class="card" markdown>
 
-**[What Makes This Different](what-makes-this-different.md)** - The 10 things no other setup does.
+### New to Claude Code?
 
-**[Architecture](architecture/overview.md)** - How the six layers work together.
+Never used Claude Code before? Start here. We'll point you to the best beginner resources, then bring you back for the operating system layer.
 
-**[Skills](skills/morning.md)** - Deep dives into each of the 7 published skills.
+[Start here →](new-to-claude-code.md)
 
-**[Reference](reference/quartermaster-md.md)** - The full CLAUDE.md template, task format, anti-slop rules, and rules system.
+</div>
 
-**[About](about.md)** - Who built this and why.
+<div class="card" markdown>
+
+### Quickstart
+
+Get running in 30 minutes. Clone the template, set up semantic search, wire the hooks, customise CLAUDE.md, run your first `/morning`.
+
+[Get started →](quickstart.md)
+
+</div>
+
+<div class="card" markdown>
+
+### Architecture
+
+How the six layers work together: vault structure, skills, hooks, memory, search, and the self-improvement loop.
+
+[Deep dive →](architecture/overview.md)
+
+</div>
+
+<div class="card" markdown>
+
+### Skills
+
+7 published skills documented in full. Daily planning, document challenge, weekly review, content transform, meeting briefs, changelogs, and voice-calibrated drafting.
+
+[Browse skills →](skills/morning.md)
+
+</div>
+
+<div class="card" markdown>
+
+### Reference
+
+The full CLAUDE.md template, task format specification, anti-slop rules, and rules system documentation.
+
+[Reference docs →](reference/quartermaster-md.md)
+
+</div>
+
+<div class="card" markdown>
+
+### About
+
+Who built this, why it exists, and the thesis behind it.
+
+[Read more →](about.md)
+
+</div>
+
+</div>
+
+<div class="feedback-line" markdown>
+Something broken or unclear? [Open an issue](https://github.com/sovrana/qm-os/issues) or [start a discussion](https://github.com/sovrana/qm-os/discussions).
+</div>

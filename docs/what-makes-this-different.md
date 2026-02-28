@@ -70,3 +70,11 @@ These five aren't independent features. They form a single loop:
 **Use the system** → corrections feed the calibration log → patterns graduate to permanent rules → rules improve every session → better output generates fewer corrections → the system stabilises around your actual preferences.
 
 You don't configure this system. You grow it.
+
+---
+
+Ready to try it? [Get started in 30 minutes →](quickstart.md)
+
+<div class="feedback-line" markdown>
+Something missing from this list? [Start a discussion](https://github.com/sovrana/qm-os/discussions).
+</div>

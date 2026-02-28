@@ -50,7 +50,7 @@ Standard pattern matching. Grep for exact strings in file content. Glob for file
 ### Reindexing
 
 - **BM25:** `qmd update` - runs automatically on session start and after every file write (~200ms)
-- **Semantic:** `./99_System/brain-search/reindex` - runs on session stop (~15s). Manual trigger after large batch imports
+- **Semantic:** `./99_System/qm-search/reindex` - runs on session stop (~15s). Manual trigger after large batch imports
 - **Grep:** No index. Always current.
 
 ### The Parallel Search Pattern

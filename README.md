@@ -1,18 +1,16 @@
 # Quartermaster (QM)
 
-An agentic operating system for Claude Code. Built for executives and serious builders who want AI agents handling coordination so they can focus on judgment.
+An AI operating system that gets smarter every time you use it.
 
-## What This Is
+## Five things nothing else does
 
-QM is a complete system architecture for running your professional life through Claude Code. It includes:
+1. **It gets smarter every time you use it** - Corrections auto-graduate into permanent rules. The system rewrites its own instructions based on your behaviour.
+2. **It knows your context before you explain it** - Six-file memory, session-type pre-flights, stakeholder-adapted output. You never repeat yourself.
+3. **It writes like you, not like AI** - Voice-matched against your real writing samples. 40+ banned AI-slop words and structures.
+4. **It makes your knowledge searchable** - Three-mode search across everything you've ever written. Concepts, keywords, and exact patterns.
+5. **It publishes itself safely** - Build with real data. The privacy pipeline sanitises everything before it touches GitHub.
 
-- **16 skills** (7 published) that orchestrate complex workflows through parallel AI subagents
-- **Three-hook automation** that loads context on session start, commits on session end, and reindexes on every write
-- **A six-file persistent memory system** that builds institutional knowledge across conversations
-- **Local semantic search** over your markdown vault, exposed as an MCP tool
-- **A self-improvement feedback loop** that extracts patterns from every session and graduates them into system rules
-
-Built over 8 weeks of daily production use. Not a proof of concept.
+Built over 8 weeks of daily production use. 7 published skills. Not a proof of concept.
 
 ## Quick Start
 
@@ -22,9 +20,9 @@ git clone https://github.com/sovrana/qm-os.git
 cp -r qm-os/template/ ~/my-vault/
 
 # Set up semantic search
-cd qm-os/brain-search
-python3 -m venv brain-search-env
-source brain-search-env/bin/activate
+cd qm-os/qm-search
+python3 -m venv qm-search-env
+source qm-search-env/bin/activate
 pip install -r requirements.txt
 QM_VAULT_PATH=~/my-vault python index_vault.py
 
