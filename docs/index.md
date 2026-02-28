@@ -87,8 +87,8 @@ Not for you if you're looking for a chatbot wrapper, a coding assistant, or a on
 <div class="feature" markdown>
 <div class="feature-icon">📝</div>
 <div class="feature-text" markdown>
-<strong>Automatic decision tracking across 100-round iterations</strong>
-<span>Every structural change logged with reasoning. Contradiction detection catches when you reverse a previous decision: "This reverses the Round 12 decision to remove the budget table. Intentional?" No accidentally relitigating settled questions.</span>
+<strong>It remembers why you decided what you decided</strong>
+<span>Every structural change logged with reasoning. Contradiction detection catches when you reverse a previous decision: "This reverses the decision to remove the budget table. Intentional?" No accidentally relitigating settled questions.</span>
 </div>
 </div>
 </div>

@@ -120,9 +120,9 @@ This isn't a closed system. It plugs into the tools you already use:
 
 The output pipeline matters as much as the input. Writing a board memo in markdown is pointless if you can't get it into the format stakeholders expect. One command converts and copies.
 
-## 8. Automatic decision tracking across 100-round iterations
+## 8. It remembers why you decided what you decided
 
-When you're on round 47 of a document, you need to know why the budget table was removed in round 12. Git tracks what changed. Quartermaster tracks **why**.
+You're deep in a document iteration. You want to add back the budget table. But you removed it two weeks ago for a reason you can't remember. Git tracks what changed. Quartermaster tracks **why**.
 
 Every tracked document gets a companion changelog that records:
 
@@ -133,9 +133,9 @@ Every tracked document gets a companion changelog that records:
 
 The system logs automatically during iteration - you don't invoke it. Structural changes, section removals, and explicit reasoning all trigger entries. Typo fixes and word swaps don't.
 
-The killer feature is **contradiction detection.** When a new change reverses a previously logged decision, the system catches it immediately: "This reverses the Round 3 decision to remove the competitive analysis. Intentional?"
+The killer feature is **contradiction detection.** When a new change reverses a previously logged decision, the system catches it immediately: "This reverses the decision to remove the competitive analysis. Intentional?"
 
-In long iterations, it's easy to circle back to something you already tried and rejected. The changelog prevents accidental regression and forces conscious reversals. Rejected alternatives are permanent constraints unless explicitly overturned.
+Over weeks of iteration, it's easy to circle back to something you already tried and rejected. The changelog prevents accidental regression and forces conscious reversals. Rejected alternatives are permanent constraints unless explicitly overturned.
 
 ---
 
