@@ -16,7 +16,7 @@ hide:
 </div>
 
 <div class="intro-note" markdown>
-Built by [Marc Lien](about.md), an AI transformation lead inside a global PE firm. Not a developer. I manage five workstreams across multiple portfolio companies. I needed an AI assistant that works while I sleep, remembers everything I've told it, and gets better without me asking. Nothing like it existed. So I built one. 8 weeks of daily production use. Open source. [Read the backstory →](about.md)
+I run AI transformation for a global PE firm. Five workstreams, multiple portfolio companies, no engineering team. I needed an AI that works while I sleep and gets better without me asking. So I built one. 8 weeks of production use. Open source. [Who I am →](about.md)
 </div>
 
 <p class="section-label">Who this is for</p>
