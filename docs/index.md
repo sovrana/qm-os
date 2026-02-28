@@ -7,7 +7,7 @@ hide:
 
 # Quartermaster
 
-<p class="subtitle">A personal AI operating system that runs 24/7, captures from every device, processes meetings autonomously, manages your tasks, red-teams your work, and gets smarter every week. Built by a business exec who got tired of re-explaining context every morning.</p>
+<p class="subtitle">A personal AI operating system that runs 24/7, captures from every device, processes meetings autonomously, manages your tasks, red-teams your work, and gets smarter every week. Built by a PE exec who got tired of re-explaining context every morning.</p>
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
 [What's Different](what-makes-this-different.md){ .md-button }
@@ -190,114 +190,12 @@ I've built another 10+ for my own workflows: `/inbox`, `/gmail`, `/prep`, `/publ
 
 [Browse all skills →](skills/morning.md)
 
-<p class="section-label">The full stack</p>
-
-## What powers it
-
-<div class="grid" markdown>
-<div class="card" markdown>
-<div class="card-icon">🖥️</div>
-
-### Claude Code
-
-The brain. Deep work sessions, skill execution, document iteration, search, analysis. Where the hard thinking happens.
-
-[Architecture →](architecture/overview.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">📱</div>
-
-### Obsidian
-
-Mobile vault access. Read status docs, browse meeting notes, quick capture from your phone. Same vault, synced via iCloud.
-
-[Folder structure →](architecture/folder-structure.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">🤖</div>
-
-### OpenClaw + Telegram
-
-Always-on daemon on a second machine. Hourly heartbeat, inbox processing, waiting alerts, mobile task capture, vault queries from your phone.
-
-[How it works →](architecture/always-on.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">🎙️</div>
-
-### MacWhisper
-
-Meeting transcription. Record, export, drop in inbox. The system handles the rest - extraction, routing, action items.
-
-[Transform skill →](skills/transform.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">⚡</div>
-
-### Skills <span class="badge">7 core</span>
-
-Daily planning, meeting prep, red-team review, content drafting, weekly maintenance, transcript processing. Write your own in under 10 minutes.
-
-[Browse skills →](skills/morning.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">🔍</div>
-
-### Three-Mode Search
-
-Semantic (concepts), BM25 (keywords), grep (exact). Run in parallel. Everything you've ever written, searchable in seconds.
-
-[Search architecture →](architecture/search.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">🏗️</div>
-
-### Seven-Layer Architecture
-
-Vault, skills, hooks, daemon, memory, search, and a self-improvement loop that rewrites its own rules. Each layer independent. Together they compound.
-
-[Deep dive →](architecture/overview.md)
-</div>
-</div>
-
-<p class="section-label">Go deeper</p>
-
-## Explore
-
-<div class="grid" markdown>
-<div class="card" markdown>
-<div class="card-icon">💡</div>
-
-### Choose Your Path
-
-Three starting points: ChatGPT user, Claude Code user, or AI system builder. Pick the one that fits.
-
-[Get Started →](new-to-claude-code.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">🚀</div>
-
-### Quickstart
-
-Clone the template, set up search, wire the hooks, customise CLAUDE.md, run your first `/morning`. 30 minutes.
-
-[Get started →](quickstart.md)
-</div>
-<div class="card" markdown>
-<div class="card-icon">📖</div>
-
-### Reference
-
-The full CLAUDE.md template, task format specification, anti-slop rules, and the rules system.
-
-[Reference docs →](reference/quartermaster-md.md)
-</div>
-</div>
-
 <div class="cta-bar" markdown>
-**Stay in the loop.** I add new skills and documentation regularly. [Star the repo](https://github.com/sovrana/qm-os) so others can find it. Something broken or unclear? [Open an issue](https://github.com/sovrana/qm-os/issues) or [start a discussion](https://github.com/sovrana/qm-os/discussions).
+[Quickstart (30 min) →](quickstart.md){ .md-button .md-button--primary }
+[Architecture deep dive →](architecture/overview.md){ .md-button }
+[Star the repo](https://github.com/sovrana/qm-os){ .md-button }
 </div>
 
 <div class="feedback-line" markdown>
-Built with [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Inspired by [Claude Blattman](https://claudeblattman.com).
+Built with [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Something broken? [Open an issue](https://github.com/sovrana/qm-os/issues) or [start a discussion](https://github.com/sovrana/qm-os/discussions).
 </div>
