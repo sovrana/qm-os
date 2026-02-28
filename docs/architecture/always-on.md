@@ -119,7 +119,7 @@ The daemon turns QM from a tool you use into a system that works for you. The ps
 
 ## Related
 
-- [System Overview](overview.md) - Where the daemon fits in the six-layer architecture
+- [System Overview](overview.md) - Where the daemon fits in the seven-layer architecture
 - [Three-Hook Automation](hooks.md) - Claude Code hooks handle in-session automation; the daemon handles between-session automation
 - [Skills System](skills-system.md) - The daemon hands off complex processing to skills like `/transform`
 - [Folder Structure](folder-structure.md) - The daemon reads and writes the same numbered folders

@@ -88,7 +88,7 @@ The 3-occurrence threshold matters. It filters noise from signal. A single sugge
 
 ## Related
 
-- [System Overview](overview.md) - Where the improvement loop sits in the six-layer architecture
+- [System Overview](overview.md) - Where the improvement loop sits in the seven-layer architecture
 - [Six-File Memory](memory-system.md) - The calibration log is one of the six memory files
 - [Skills System](skills-system.md) - `/weekly` surfaces BEADs for implementation
 - [The full CLAUDE.md template](../reference/quartermaster-md.md) - Where graduated rules end up

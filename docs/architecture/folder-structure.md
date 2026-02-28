@@ -100,6 +100,6 @@ The folder structure is the workflow. Moving a file from `00_Inbox/` to `02_Them
 
 ## Related
 
-- [System Overview](overview.md) - How folders fit into the six-layer architecture
+- [System Overview](overview.md) - How folders fit into the seven-layer architecture
 - [Skills System](skills-system.md) - Skills read from these folders during execution
 - [Three-Hook Automation](hooks.md) - The stop hook auto-commits changes across these directories

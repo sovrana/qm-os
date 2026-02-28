@@ -92,6 +92,6 @@ Search quality determines system usability. If you can't find what you filed, fi
 
 ## Related
 
-- [System Overview](overview.md) - Where search sits in the six-layer architecture
+- [System Overview](overview.md) - Where search sits in the seven-layer architecture
 - [Three-Hook Automation](hooks.md) - The post-write hook triggers BM25 reindex after every edit
 - [Skills System](skills-system.md) - Skills use parallel search during their gather phase

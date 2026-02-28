@@ -107,7 +107,7 @@ Skills are SOPs for an AI employee. The same principle applies: if you wouldn't 
 
 ## Related
 
-- [System Overview](overview.md) - Where skills sit in the six-layer architecture
+- [System Overview](overview.md) - Where skills sit in the seven-layer architecture
 - [Three-Mode Search](search.md) - Skills use parallel search during the gather phase
 - [Six-File Memory](memory-system.md) - Skills read memory files for context
 - [Self-Improvement Loop](self-improvement.md) - Sessions generate improvement suggestions that refine skill behaviour

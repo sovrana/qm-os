@@ -246,9 +246,9 @@ Semantic (concepts), BM25 (keywords), grep (exact). Run in parallel. Everything 
 <div class="card" markdown>
 <div class="card-icon">🏗️</div>
 
-### Six-Layer Architecture
+### Seven-Layer Architecture
 
-Vault, skills, hooks, memory, search, and a self-improvement loop that rewrites its own rules. Each layer independent. Together they compound.
+Vault, skills, hooks, daemon, memory, search, and a self-improvement loop that rewrites its own rules. Each layer independent. Together they compound.
 
 [Deep dive →](architecture/overview.md)
 </div>

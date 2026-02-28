@@ -111,7 +111,7 @@ Hooks handle the boring but critical maintenance work. The session-start hook al
 
 ## Related
 
-- [System Overview](overview.md) - Where hooks sit in the six-layer architecture
+- [System Overview](overview.md) - Where hooks sit in the seven-layer architecture
 - [Folder Structure](folder-structure.md) - The stop hook commits across vault directories
 - [Three-Mode Search](search.md) - The post-write hook triggers search reindexing
 - [Skills System](skills-system.md) - The session-start hook surfaces context that skills build on

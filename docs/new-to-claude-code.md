@@ -26,7 +26,7 @@ You run Claude Code daily but every session starts from zero. You want persisten
 
 ### I build AI systems
 
-You want the architecture patterns. Six-layer design, self-improvement loops, three-mode search, hook automation. Built for forking and adapting.
+You want the architecture patterns. Seven-layer design, self-improvement loops, three-mode search, hook automation. Built for forking and adapting.
 
 [Start here ↓](#path-3-the-architecture)
 </div>
@@ -72,13 +72,13 @@ You already know what Claude Code can do. Here's what it can't do on its own - a
 
 1. **Run the [Quickstart](quickstart.md)** - 30 minutes. Clone, configure, run `/morning`.
 2. **Process a few real items** - drop a transcript through `/transform`, run `/challenge` on a document, let the calibration log start capturing your corrections.
-3. **Explore the [Architecture](architecture/overview.md)** - understand the six layers so you can extend the system yourself.
+3. **Explore the [Architecture](architecture/overview.md)** - understand the seven layers so you can extend the system yourself.
 
 ## Path 3: The Architecture
 
 You want to understand the design decisions. Here's the system in engineering terms.
 
-**Six layers, each independent, together they compound:**
+**Seven layers, each independent, together they compound:**
 
 1. **Vault** - Obsidian-compatible markdown folder structure. Themes, tasks, reference, inbox. No database. No lock-in. Git-versioned. [Folder structure →](architecture/folder-structure.md)
 
@@ -86,22 +86,24 @@ You want to understand the design decisions. Here's the system in engineering te
 
 3. **Hooks** - Shell scripts triggered on session start, session end, and file write. The session-start hook loads a dashboard. The session-end hook auto-commits. The file-write hook reindexes search. [Hooks →](architecture/hooks.md)
 
-4. **Memory** - Six files that give Claude persistent context: CLAUDE.md (identity + rules), MEMORY.md (live state), calibration-log.md (corrections), connections.md (cross-theme links), voice-exemplars.md (writing samples), stakeholder-live.md (people dynamics). [Memory system →](architecture/memory-system.md)
+4. **Always-On Daemon** - A Telegram bot on a second machine, connected via iCloud sync. Hourly heartbeat processes inbox, flags waiting items, sends morning plans and evening summaries. [Always-on daemon →](architecture/always-on.md)
 
-5. **Search** - Three modes in parallel: semantic (concepts), BM25 (keywords), grep (exact match). Different retrieval strategies for different query types. [Search architecture →](architecture/search.md)
+5. **Memory** - Six files that give Claude persistent context: CLAUDE.md (identity + rules), MEMORY.md (live state), calibration-log.md (corrections), connections.md (cross-theme links), voice-exemplars.md (writing samples), stakeholder-live.md (people dynamics). [Memory system →](architecture/memory-system.md)
 
-6. **Self-improvement** - Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. A weekly review surfaces improvements. The system rewrites its own instructions. [Self-improvement loop →](architecture/self-improvement.md)
+6. **Search** - Three modes in parallel: semantic (concepts), BM25 (keywords), grep (exact match). Different retrieval strategies for different query types. [Search architecture →](architecture/search.md)
+
+7. **Self-improvement** - Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. A weekly review surfaces improvements. The system rewrites its own instructions. [Self-improvement loop →](architecture/self-improvement.md)
 
 **Key design decisions:**
 
 - **Local-first.** Everything is markdown files on disk. No cloud dependency beyond the LLM API. Full git history.
-- **Two-machine architecture.** Your working machine runs Claude Code. A second machine runs an always-on daemon (OpenClaw) for heartbeat processing, Telegram alerts, and autonomous inbox handling.
+- **Two-machine architecture.** Your working machine runs Claude Code. A second machine runs an always-on daemon for heartbeat processing, Telegram alerts, and autonomous inbox handling. [Details →](architecture/always-on.md)
 - **Rules, not prompts.** Behaviour is governed by CLAUDE.md files at global, theme, and project levels. Conditional rules load only when working in matching directories. This is configuration-as-code for AI assistants.
 - **Accumulation over optimisation.** Every session makes the next one better. Corrections become rules. Rules become habits. The value compounds.
 
 ### What you need to do
 
-1. **Read the [Architecture Overview](architecture/overview.md)** - the full six-layer breakdown.
+1. **Read the [Architecture Overview](architecture/overview.md)** - the full seven-layer breakdown.
 2. **Fork the [template repo](https://github.com/sovrana/qm-os)** - adapt the structure to your workflow.
 3. **Run the [Quickstart](quickstart.md)** - get it running, then modify.
 
