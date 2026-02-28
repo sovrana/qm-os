@@ -18,9 +18,9 @@ When working with todo files, follow the task management SOP:
 
 **Generated files (read-only, don't edit manually):**
 - `daily-plan.md` - AI-generated via `/morning`
-- `waiting.md` - AI-generated via `/show waiting`
+- `waiting.md` - AI-generated waiting items view
 
-**Capture file:** `capture.md` - Mobile append target. Process with `/inbox`.
+**Capture file:** `capture.md` - Mobile append target. Process with `/transform`.
 
 **Archive:** `archive/YYYY-MM.md` - Completed tasks by month.
 

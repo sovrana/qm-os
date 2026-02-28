@@ -8,7 +8,7 @@ model: sonnet
 
 # Brief
 
-Generate a fast, opinionated pre-meeting one-pager. NOT a deep research tool (/prep handles that). This is a 2-minute context reload before walking into a room.
+Generate a fast, opinionated pre-meeting one-pager. NOT a deep research tool. This is a 2-minute context reload before walking into a room.
 
 **Two modes:**
 

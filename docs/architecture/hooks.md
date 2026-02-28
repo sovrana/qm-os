@@ -10,9 +10,9 @@ Without hooks, every session starts cold. You'd need to manually load context, r
 
 ## How
 
-### Hook 1: session-start (Context Load)
+### Hook 1: UserPromptSubmit (Context Load)
 
-Fires when a Claude Code conversation begins. The shell script:
+Fires on the first user message of a conversation. The shell script:
 
 - Prints the current date and vault structure
 - Lists active themes sorted by recent modification
@@ -23,7 +23,7 @@ Fires when a Claude Code conversation begins. The shell script:
 
 This gives Claude Code immediate situational awareness. No "what are we working on?" - it already knows.
 
-### Hook 2: session-stop (Auto-Commit)
+### Hook 2: Stop (Auto-Commit)
 
 Fires when a conversation ends. The shell script:
 
@@ -36,7 +36,7 @@ Fires when a conversation ends. The shell script:
 
 No work is ever lost. Every session's changes are captured automatically.
 
-### Hook 3: post-write (Reindex)
+### Hook 3: PostToolUse (Reindex)
 
 Fires after every Write or Edit tool use. Runs asynchronously (doesn't block Claude). Refreshes the BM25 keyword search index so newly created or modified files are immediately searchable within the same session.
 
@@ -47,20 +47,48 @@ Hooks are configured in `.claude/settings.json`:
 ```json
 {
   "hooks": {
-    "SessionStart": [{ "type": "command", "command": "...session-start.sh" }],
-    "Stop": [{ "type": "command", "command": "...session-stop.sh", "timeout": 30 }],
-    "PostToolUse": [{ "matcher": "Write|Edit", "type": "command", "command": "...post-tool-reindex.sh", "async": true }]
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/post-write-reindex.sh"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/session-start.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/session-stop.sh"
+          }
+        ]
+      }
+    ]
   }
 }
 ```
 
-The `matcher` field on PostToolUse ensures reindexing only triggers on file modifications, not on every tool call. The `async: true` flag prevents the reindex from blocking Claude's response.
+The `matcher` field on PostToolUse ensures reindexing only triggers on file modifications, not on every tool call. Hook arrays use the `"hooks"` key to contain one or more command objects.
 
 ### Hook Lifecycle
 
 ```mermaid
 graph LR
-    A[Session Opens] -->|SessionStart| B[Context Dashboard]
+    A[Session Opens] -->|UserPromptSubmit| B[Context Dashboard]
     B --> C[Work Session]
     C -->|Write/Edit| D[Reindex Search]
     D --> C
@@ -77,3 +105,10 @@ Hooks handle the boring but critical maintenance work. The session-start hook al
 - **Exclude directories** from auto-commit by adjusting the `git add` paths
 - **Add post-write triggers** beyond reindexing (e.g., linting, validation)
 - **Adjust timeouts** - the stop hook has a 30-second cap to prevent hanging
+
+## Related
+
+- [System Overview](overview.md) - Where hooks sit in the six-layer architecture
+- [Folder Structure](folder-structure.md) - The stop hook commits across vault directories
+- [Three-Mode Search](search.md) - The post-write hook triggers search reindexing
+- [Skills System](skills-system.md) - The session-start hook surfaces context that skills build on

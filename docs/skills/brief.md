@@ -8,7 +8,7 @@ Generates a fast, opinionated pre-meeting one-pager in under 2 minutes. Pulls ta
 
 You know the feeling: meeting starts in 3 minutes, you can't remember what was agreed last time, what you owe them, or what they owe you. You scramble through notes and find nothing useful in time.
 
-`/brief` solves this by assembling context from across the vault, filtered to the specific person and theme you're about to discuss. Speed over depth. This is a context reload, not a research project. (For deep research, use `/prep`.)
+`/brief` solves this by assembling context from across the vault, filtered to the specific person and theme you're about to discuss. Speed over depth. This is a context reload, not a research project. (For deep research, build a custom `/prep` skill.)
 
 ## How It Works
 

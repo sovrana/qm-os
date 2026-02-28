@@ -88,3 +88,14 @@ The system's value compounds. Every session generates calibration data, improvem
 - **Adjust memory** by editing which files auto-load via MEMORY.md
 - **Swap search models** by changing the sentence-transformer model in the indexer
 - **Modify hooks** by editing shell scripts in `.claude/hooks/`
+
+## Deep Dives
+
+Each layer has its own page with implementation details and customisation guides:
+
+- [Folder Structure](folder-structure.md) - The numbered-prefix pattern and theme layout
+- [Skills System](skills-system.md) - SKILL.md format and the gather-analyse-synthesise pattern
+- [Three-Hook Automation](hooks.md) - Context load, auto-commit, and reindex wiring
+- [Six-File Memory](memory-system.md) - Persistent memory across sessions
+- [Three-Mode Search](search.md) - Semantic, BM25, and exact match in parallel
+- [Self-Improvement Loop](self-improvement.md) - BEADs, calibration log, and the graduation pattern

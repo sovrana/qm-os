@@ -16,7 +16,7 @@ When working with files in 00_Inbox/, follow the inbox processing SOP:
 
 **Processing flow:**
 1. Identify theme from content
-2. Extract and process (see `/inbox` skill for full SOP)
+2. Extract and process (see `/transform` skill for full SOP)
 3. Create processed files in `02_Themes/[theme]/`
 4. Update theme status files if new information
 5. Archive original

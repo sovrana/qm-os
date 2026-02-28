@@ -64,3 +64,10 @@ Memory files are cheaper than forgetting. A five-line entry in `calibration-log.
 - **Adjust MEMORY.md cap** based on your context window budget
 - **Change stakeholder refresh cadence** from weekly to daily for fast-moving environments
 - **Customise calibration categories** to match your domain's decision types
+
+## Related
+
+- [System Overview](overview.md) - Where memory sits in the six-layer architecture
+- [Self-Improvement Loop](self-improvement.md) - Calibration log patterns graduate to CLAUDE.md rules
+- [Skills System](skills-system.md) - Skills read memory files during execution
+- [Three-Hook Automation](hooks.md) - The session-start hook makes memory available each session

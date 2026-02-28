@@ -64,6 +64,6 @@ echo "- Unprocessed captures: $CAPTURE_COUNT"
 echo ""
 
 echo "---"
-echo "_/morning for daily plan | /evening for reflection | /show [theme] for filtered view_"
+echo "_/morning for daily plan | /challenge for critical review | /weekly for maintenance_"
 
 exit 0

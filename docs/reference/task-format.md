@@ -20,7 +20,7 @@ Only two fields are required. Everything else is optional metadata that skills u
 | `📅 YYYY-MM-DD` | No | `📅 2026-03-01` | Due date (Obsidian Tasks format) |
 | `@waiting(Name)` | No | `@waiting(Alex)` | Blocked by this person |
 | `➕ YYYY-MM-DD` | No | `➕ 2026-02-15` | When waiting started. Used to calculate age. |
-| `@agenda(Name)` | No | `@agenda(Jordan)` | Discuss with this person. `/brief` and `/show @Name` surface these. |
+| `@agenda(Name)` | No | `@agenda(Jordan)` | Discuss with this person. `/brief` surfaces these. |
 | `@context()` | No | `@context(Home)` | Location constraint. Unmarked = can do anywhere. |
 | `!impact(H\|M\|L)` | No | `!impact(H)` | Strategic importance |
 | `!effort(H\|M\|L)` | No | `!effort(L)` | Time/complexity |
@@ -59,7 +59,7 @@ Untagged tasks default to Medium/Medium (neutral leverage). The scoring is addit
 Tasks live in `tasks.md` only. Not in theme `status.md` files. Not in meeting notes. Not in capture files.
 
 - `status.md` tracks strategic context (Now/Next/Blockers/Decisions) but never duplicates task lists
-- `capture.md` is a temporary inbox - tasks get routed to `tasks.md` during `/inbox` processing
+- `capture.md` is a temporary inbox - tasks get routed to `tasks.md` during `/transform` processing
 - `daily-plan.md` and `waiting.md` are generated views, not manually edited
 - Completed tasks archive to `01_Todos/archive/YYYY-MM.md` during `/weekly`
 

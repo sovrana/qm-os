@@ -21,7 +21,7 @@ This gives you the full folder structure, all 7 skill files, hooks, rules, and a
 ## 2. Set Up Semantic Search
 
 ```bash
-cd qm-os/brain-search
+cd ~/qm-os/brain-search
 python3 -m venv brain-search-env
 source brain-search-env/bin/activate
 pip install -r requirements.txt
@@ -145,7 +145,7 @@ If this works, the system is live.
 
 **This week:**
 
-- Process a few items through `/inbox` to build the pattern
+- Process a few items through `/transform` to build the pattern
 - Try `/challenge` on a document before sharing it externally
 - Let the calibration log start capturing your corrections
 

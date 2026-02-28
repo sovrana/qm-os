@@ -35,7 +35,7 @@ QM_VAULT_PATH=~/my-vault python index_vault.py
 # 4. Run /morning
 ```
 
-See the [full quickstart guide](https://marclien.github.io/qm-os/quickstart/) for details.
+See the [full quickstart guide](https://sovrana.github.io/qm-os/quickstart/) for details.
 
 ## Architecture
 
@@ -74,7 +74,7 @@ You --- Claude Code --- Skills (SKILL.md SOPs)
 
 ## Documentation
 
-Full documentation at [marclien.github.io/qm-os](https://marclien.github.io/qm-os)
+Full documentation at [sovrana.github.io/qm-os](https://sovrana.github.io/qm-os)
 
 ## License
 

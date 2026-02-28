@@ -75,3 +75,10 @@ Skills are SOPs for an AI employee. The same principle applies: if you wouldn't 
 - **Tool restrictions** - limit what each skill can access
 - **Argument passing** - skills can accept parameters (e.g., `/brief #project-a @alex`)
 - **Nesting** - skills can reference other skills' outputs
+
+## Related
+
+- [System Overview](overview.md) - Where skills sit in the six-layer architecture
+- [Three-Mode Search](search.md) - Skills use parallel search during the gather phase
+- [Six-File Memory](memory-system.md) - Skills read memory files for context
+- [Self-Improvement Loop](self-improvement.md) - Sessions generate improvement suggestions that refine skill behaviour

@@ -62,3 +62,9 @@ The folder structure is the workflow. Moving a file from `00_Inbox/` to `02_Them
 - **Add inbox sources** by creating subfolders in `00_Inbox/` (e.g., `macwhisper/`, `email-exports/`)
 - **Adjust theme structure** to fit your domain - the subfolders are conventions, not hard requirements
 - **Rename prefixes** if you prefer different ordering, but keep the numbered-prefix pattern
+
+## Related
+
+- [System Overview](overview.md) - How folders fit into the six-layer architecture
+- [Skills System](skills-system.md) - Skills read from these folders during execution
+- [Three-Hook Automation](hooks.md) - The stop hook auto-commits changes across these directories

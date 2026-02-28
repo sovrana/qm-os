@@ -82,3 +82,10 @@ The 3-occurrence threshold matters. It filters noise from signal. A single sugge
 - **Change extraction frequency** - per session, daily, or weekly
 - **Add suggestion categories** to track improvement types (workflow, voice, analysis, etc.)
 - **Modify archival rules** based on how fast your working patterns evolve
+
+## Related
+
+- [System Overview](overview.md) - Where the improvement loop sits in the six-layer architecture
+- [Six-File Memory](memory-system.md) - The calibration log is one of the six memory files
+- [Skills System](skills-system.md) - `/weekly` surfaces BEADs for implementation
+- [The full CLAUDE.md template](../reference/quartermaster-md.md) - Where graduated rules end up
