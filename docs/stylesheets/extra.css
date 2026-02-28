@@ -2,6 +2,16 @@
    QM-OS Custom Styles
    ============================================ */
 
+/* --- Announcement bar --- */
+.md-banner {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+.md-banner a {
+  color: var(--md-accent-fg-color);
+}
+
 /* --- Homepage: hide TOC sidebar, use full width --- */
 .md-typeset .hide-toc + .md-sidebar--secondary {
   display: none;
