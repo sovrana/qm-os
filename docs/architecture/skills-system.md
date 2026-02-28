@@ -1,5 +1,8 @@
 # Skills System
 
+!!! abstract "TL;DR"
+    Skills are SKILL.md files that act as SOPs for Claude Code. Type `/morning` and Claude follows a step-by-step procedure. Seven published skills cover daily planning, meeting prep, document review, content creation, and weekly maintenance. Write your own in under 10 minutes.
+
 ## What
 
 A skill is a SKILL.md file that acts as a standard operating procedure (SOP) for Claude Code. When you type `/morning`, Claude reads the corresponding SKILL.md and follows its instructions step by step. Skills are versionable, inspectable, and modular - plain markdown files checked into git.

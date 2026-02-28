@@ -1,5 +1,8 @@
 # System Overview
 
+!!! abstract "TL;DR"
+    Six layers turn a markdown vault into a persistent AI assistant: **vault** (files) + **skills** (workflows) + **hooks** (automation) + **memory** (persistence) + **search** (retrieval) + **self-improvement** (learning). Each layer works independently. Together they compound.
+
 ## What
 
 Quartermaster (QM) is an agentic operating system for Claude Code. It turns a markdown vault into a persistent, self-improving assistant that remembers context, automates workflows, and gets smarter every week.

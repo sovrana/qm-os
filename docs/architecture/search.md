@@ -1,5 +1,8 @@
 # Three-Mode Search
 
+!!! abstract "TL;DR"
+    Three search modes for different needs: **semantic** (conceptual, catches synonyms), **BM25** (keyword-ranked, fast), **grep/glob** (exact match, instant). For research queries, run semantic + grep in parallel. No external database required.
+
 ## What
 
 QM provides three search modes that serve different query types: semantic (conceptual), BM25 (keyword-ranked), and grep/glob (exact match). For research queries, run semantic and grep in parallel to catch what either would miss alone.

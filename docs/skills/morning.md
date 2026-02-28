@@ -1,5 +1,12 @@
 # /morning - Daily Planning
 
+| | |
+|---|---|
+| **Runtime** | ~5 minutes |
+| **Reads** | `tasks.md`, theme `status.md` files, `connections.md`, MEMORY.md |
+| **Writes** | `01_Todos/daily-plan.md` |
+| **Model** | Sonnet |
+
 ## What It Does
 
 Generates a prioritised daily plan from your task file, theme status files, and waiting items. Runs in under 5 minutes and writes a read-only `daily-plan.md` you can check from your phone.

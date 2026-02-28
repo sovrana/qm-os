@@ -1,5 +1,8 @@
 # Six-File Memory System
 
+!!! abstract "TL;DR"
+    Six markdown files survive between sessions: strategic state, voice samples, rejection patterns, cross-theme connections, stakeholder postures, and recent decisions. Rejection patterns that appear 3+ times graduate to permanent rules. The system literally rewrites its own instructions.
+
 ## What
 
 Six markdown files that persist across Claude Code conversations. They live in Claude Code's auto-memory directory and are loaded at the start of every session. Together, they give Claude Code a working memory that survives session boundaries.

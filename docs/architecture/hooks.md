@@ -1,5 +1,8 @@
 # Three-Hook Automation
 
+!!! abstract "TL;DR"
+    Three hooks fire automatically: **session-start** loads a context dashboard, **session-stop** commits all changes to git, **post-write** reindexes search. Zero manual maintenance. Every session starts informed and ends saved.
+
 ## What
 
 QM uses three hooks that fire at specific points in the Claude Code lifecycle. They automate context loading, change persistence, and search freshness - the three things you'd otherwise forget to do manually.

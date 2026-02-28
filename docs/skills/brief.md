@@ -1,5 +1,12 @@
 # /brief - Meeting Prep
 
+| | |
+|---|---|
+| **Runtime** | ~2 minutes |
+| **Reads** | `tasks.md`, theme `status.md`, last 3 meeting notes, `people.md`, discovery logs |
+| **Writes** | Stdout only (ephemeral) |
+| **Model** | Sonnet (4 parallel subagents) |
+
 ## What It Does
 
 Generates a fast, opinionated pre-meeting one-pager in under 2 minutes. Pulls tasks, recent meeting history, theme status, and stakeholder context into a single view you can scan before walking into a room.

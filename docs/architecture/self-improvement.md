@@ -1,5 +1,8 @@
 # Self-Improvement Loop
 
+!!! abstract "TL;DR"
+    The system tracks its own friction points. Suggestions that appear 3+ times become BEADs (validated improvements). Rejected framings log to a calibration file and graduate to permanent rules. After 8 weeks: 130+ suggestions extracted, 7 graduated to rules, each eliminating a recurring problem.
+
 ## What
 
 QM gets smarter every week through two feedback mechanisms: the BEAD system (improvement suggestions tracked by frequency) and the calibration log (rejection patterns that graduate to formal rules). Neither requires manual intervention. The system observes how it's used, surfaces patterns, and promotes validated changes.

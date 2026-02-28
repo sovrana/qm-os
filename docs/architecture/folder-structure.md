@@ -1,5 +1,8 @@
 # Folder Structure
 
+!!! abstract "TL;DR"
+    Five numbered folders (`00` through `99`) mirror the workflow: capture, process, work, reference, system. Each theme gets a subfolder with its own `claude.md` for context-specific AI behaviour. Moving a file between folders *is* the processing step.
+
 ## What
 
 QM organises all content in a numbered-prefix folder hierarchy. Five top-level folders, each prefixed with a two-digit number. The prefix determines sort order, and sort order matches workflow order: capture (00) to process (01) to work (02) to reference (03) to system (99).

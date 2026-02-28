@@ -1,5 +1,12 @@
 # /challenge - Red-Team Review
 
+| | |
+|---|---|
+| **Runtime** | ~5 minutes |
+| **Reads** | Target document, theme `claude.md`, `people.md`, vault history |
+| **Writes** | Challenge report to stdout, fixes to `tasks.md` |
+| **Model** | Opus (5 parallel subagents) |
+
 ## What It Does
 
 Stress-tests any document, plan, or idea through five parallel analysis lenses before it leaves the building. Returns a verdict, the top issues to fix, and a pre-mortem of how it fails.

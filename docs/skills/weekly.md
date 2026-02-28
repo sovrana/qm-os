@@ -1,5 +1,12 @@
 # /weekly - System Maintenance
 
+| | |
+|---|---|
+| **Runtime** | ~30 minutes |
+| **Reads** | `tasks.md`, all theme files, memory files, `improvement-suggestions.md` |
+| **Writes** | `tasks.md`, archive, `recent-decisions.md`, `stakeholder-live.md`, MEMORY.md |
+| **Model** | Opus (7 parallel subagents) |
+
 ## What It Does
 
 Runs a full system audit: archives completed tasks, surfaces stale items, audits waiting lists, checks theme health, refreshes memory digests, and generates a weekly summary report. Takes about 30 minutes. The crown jewel of the QM system.

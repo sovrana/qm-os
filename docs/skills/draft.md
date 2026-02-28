@@ -1,5 +1,12 @@
 # /draft - Content Creation
 
+| | |
+|---|---|
+| **Runtime** | ~5 minutes |
+| **Reads** | Vault context (semantic search), `voice-exemplars.md`, anti-slop rules |
+| **Writes** | Stdout first, then theme file or clipboard on approval |
+| **Model** | Opus |
+
 ## What It Does
 
 Generates outbound content - LinkedIn posts, stakeholder emails, thought leadership pieces, internal memos - synthesised from vault context. Turns your internal thinking into external positioning.

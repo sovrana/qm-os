@@ -1,5 +1,12 @@
 # /changelog - Decision Tracking
 
+| | |
+|---|---|
+| **Runtime** | ~1 minute (or automatic during iteration) |
+| **Reads** | Target document, `git log`, `git diff` |
+| **Writes** | `.changelog/[filename].md` companion file |
+| **Model** | Sonnet |
+
 ## What It Does
 
 Tracks the reasoning behind document iterations. Creates a companion file that records what changed, why, what was decided, and what was rejected at each significant round. Usually runs automatically during iteration - you rarely need to invoke it manually.

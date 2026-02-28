@@ -1,5 +1,12 @@
 # /transform - Content Processing
 
+| | |
+|---|---|
+| **Runtime** | ~5 minutes per file |
+| **Reads** | Input file or `00_Inbox/` contents, theme context |
+| **Writes** | Raw + processed files to theme folder, actions to `tasks.md`, discovery logs |
+| **Model** | Sonnet |
+
 ## What It Does
 
 Converts external content into structured vault entries. Handles three modes: single file processing, batch inbox clearing, and synthesising the current conversation itself into vault updates.
