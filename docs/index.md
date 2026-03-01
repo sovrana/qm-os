@@ -19,10 +19,25 @@ hide:
 I run AI transformation at [Warburg Pincus](https://www.warburgpincus.com/). Five workstreams, multiple portfolio companies, no engineering team. Before that: McKinsey, then running billion-pound businesses at Lloyds. I needed an AI that works while I sleep and gets better without me asking. So I built one. 8 weeks of production use. Open source. [Who I am →](about.md)
 </div>
 
-<div class="demo-gif" markdown>
-<p class="demo-caption"><code>/challenge</code> tearing apart a strategy document - 5 parallel lenses, verdict in 2 minutes</p>
+<div class="arch-summary" markdown>
 
-![/challenge demo - 5 parallel red-team agents analysing a document](assets/challenge-demo.gif)
+```mermaid
+graph LR
+    A["Capture<br/><small>phone, voice,<br/>transcripts</small>"] --> B["Process<br/><small>7 skills,<br/>auto-routing</small>"]
+    B --> C["Store<br/><small>vault, search,<br/>three-mode retrieval</small>"]
+    C --> D["Learn<br/><small>calibration,<br/>self-improvement</small>"]
+    D --> E["Act<br/><small>daemon, alerts,<br/>follow-ups</small>"]
+    E --> A
+
+    style A fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style B fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style C fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style D fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style E fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+```
+
+<p class="arch-caption">Five stages, one loop. Everything flows through a markdown vault. <a href="architecture/overview.md">Full architecture →</a></p>
+
 </div>
 
 <p class="section-label">Who this is for</p>
@@ -170,6 +185,12 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 
 7 parallel subagents: task audit, stale item cleanup, memory refresh, cross-theme connection discovery, self-improvement suggestions, stakeholder heatmap, decision digest. The system gets smarter every week.
 </div>
+</div>
+
+<div class="demo-gif" markdown>
+<p class="demo-caption"><code>/challenge</code> tearing apart a strategy document - 5 parallel lenses, verdict in 2 minutes</p>
+
+![/challenge demo - 5 parallel red-team agents analysing a document](assets/challenge-demo.gif)
 </div>
 
 <p class="section-label">Type a command, get a result</p>
