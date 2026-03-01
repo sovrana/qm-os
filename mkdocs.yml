@@ -94,6 +94,7 @@ nav:
     - Brief: skills/brief.md
     - Changelog: skills/changelog.md
     - Draft: skills/draft.md
+    - Visualise: skills/visualise.md
   - Reference:
     - CLAUDE.md Template: reference/quartermaster-md.md
     - Task Format: reference/task-format.md
