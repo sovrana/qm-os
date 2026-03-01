@@ -95,5 +95,6 @@ After substantive conversations, synthesise insights into the Brain system.
 - Framework IP should always be captured - core intellectual property
 - Improvement suggestions run on EVERY `/transform session`
 - **Performance vs prep scoring:** When processing a call/meeting transcript and a prep doc exists for that meeting (check theme `meetings/` and `context/` folders), automatically include a "Performance vs Prep" section: what landed, what was missed, what was improvised. This closes the feedback loop.
+- **Strategic assessment:** After processing any substantive meeting or call transcript, include an unsolicited strategic assessment: what landed, what to watch, political dynamics, net evaluation (grade it). Don't ask - just include it. This is not analysis of the notes themselves, it's a view on what it means.
 - **Capture vs synthesis:** Before starting any processing, determine whether the user wants a capture (what happened - factual record) or a synthesis (what should happen - recommendations). Ask if unclear. "Summary" does not default to "proposal".
 - **Trusted advisor feedback:** When the user pastes feedback from trusted advisors via informal channels, process with the same structured rigour as professional stakeholder feedback. Each piece of feedback gets extracted, evaluated, and either acted on or explicitly parked.

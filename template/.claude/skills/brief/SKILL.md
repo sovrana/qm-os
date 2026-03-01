@@ -2,7 +2,7 @@
 name: brief
 description: Fast pre-meeting brief. Pulls context, tasks, history, open items into a one-pager.
 argument-hint: [#theme|@person] [meeting-topic?]
-allowed-tools: Read, Glob, Grep, Task, mcp__brain-search__semantic_search
+allowed-tools: Read, Glob, Grep, Task, mcp__qm-search__semantic_search
 model: sonnet
 ---
 

@@ -54,6 +54,14 @@ The primary memory file. Contains:
 
 Capped at ~200 lines. When it grows beyond that, older entries graduate to theme-specific files or get archived.
 
+??? example "Real entry (Live Strategic State)"
+    ```
+    **Project Alpha** - Phase 2 complete. Board approved £5M investment
+    from April 1. Lead vendor confirmed, extended through March.
+    5-year plan rebased to ~£250M EBITDA. Now in handover mode.
+    ```
+    One paragraph per theme. Current state, not history. Updated every few sessions so every conversation starts with accurate context.
+
 ### calibration-log.md
 
 The most distinctive file. Every time a preference is expressed ("don't use that framing", "too formal", "wrong audience"), it's logged here. Format:
@@ -65,6 +73,25 @@ Why: Stated reason
 
 This file is append-only and compounds over time. It's the primary mechanism for institutional memory transfer.
 
+??? example "Real entries (from production)"
+    ```
+    **[Voice | REJECTED]** Em dashes (—) and en dashes (–)
+      -> Standard hyphens, commas, or restructure
+    Why: Telltale AI marker. Spotted repeatedly.
+    ✅ Promoted to anti-slop rules.
+
+    **[Voice | REJECTED]** Hedging language ("it could potentially",
+      "there might be") -> Commit to a take
+    Why: "It depends" is a last resort. Wants opinions, not options.
+    ✅ Promoted to vibe section.
+
+    **[Structure | REJECTED]** Overclaiming maturity labels
+      ("production system", "gigafactory")
+      -> Maturity phasing (M0-M3) with earned labels
+    Why: The sceptic test: "what's true right now?"
+    ```
+    After 8 weeks: 60+ entries spanning voice, structure, framing, stakeholder calibrations, and compression preferences. Each one prevents a future mistake.
+
 ### The Graduation Pattern
 
 When the same rejection pattern appears 3+ times in the calibration log, it graduates to a formal rule in CLAUDE.md. The log is staging. CLAUDE.md is production.
@@ -74,6 +101,19 @@ This means the system's operating rules aren't designed upfront - they're discov
 ### connections.md
 
 Captures non-obvious links between themes. Format includes: title, which themes it bridges, the claim, the evidence, and a verification date. Only current, specific connections qualify. Generic patterns ("success in A helps B") don't.
+
+??? example "Real entry (sanitised)"
+    ```
+    ### Personal AI system validates platform thesis
+    - Bridges: #personal-projects + #platform-strategy
+    - Claim: The personal vault IS the accumulation thesis
+      running on one person. Three-tier search, automated
+      inbox processing, changelog as decision trace.
+      Built from zero to production in ~8 weeks.
+    - Evidence: full skill architecture, system infrastructure
+    - Added: 2026-02-21 | Last verified: 2026-02-21
+    ```
+    This connection was discovered during a session on a completely different topic. The system noticed the link, logged it, and it became a talking point in a subsequent stakeholder conversation.
 
 ## Key Insight
 
@@ -88,6 +128,7 @@ Memory files are cheaper than forgetting. A five-line entry in `calibration-log.
 
 ## Related
 
+- [In Production](in-production.md) - Real examples of memory files in action over 8 weeks
 - [System Overview](overview.md) - Where memory sits in the seven-layer architecture
 - [Self-Improvement Loop](self-improvement.md) - Calibration log patterns graduate to CLAUDE.md rules
 - [Skills System](skills-system.md) - Skills read memory files during execution

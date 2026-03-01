@@ -74,7 +74,7 @@ Whether you're new to Claude Code or pushing its limits, [pick your starting poi
 <div class="feature-icon">🔄</div>
 <div class="feature-text" markdown>
 <strong>It rewrites its own instructions</strong>
-<span>Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. A weekly review surfaces improvements. After a month, the system knows your preferences better than most human assistants. You don't configure it. You grow it.</span>
+<span>Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. A weekly review surfaces improvements. After a month, the system knows your preferences better than most human assistants. You don't configure it. You grow it. [See real examples →](architecture/in-production.md)</span>
 </div>
 </div>
 <div class="feature" markdown>

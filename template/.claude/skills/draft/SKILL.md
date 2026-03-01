@@ -2,7 +2,7 @@
 name: draft
 description: Draft outbound content from vault context. LinkedIn posts, stakeholder updates, thought leadership.
 argument-hint: [type] [topic]
-allowed-tools: Read, Glob, Grep, Write, Edit, Task, AskUserQuestion, mcp__brain-search__semantic_search
+allowed-tools: Read, Glob, Grep, Write, Edit, Task, AskUserQuestion, mcp__qm-search__semantic_search
 ---
 
 # Draft

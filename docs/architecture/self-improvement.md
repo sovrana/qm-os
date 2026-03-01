@@ -27,16 +27,44 @@ BEAD stands for a suggestion that's appeared 3+ times - it's validated and ready
 6. `/weekly` surfaces BEADs for implementation
 7. Implemented suggestions move to an archive section
 
-**Example progression:**
+**Example progressions (real, from production):**
 
 ```
 [1x] For budget discussions, create a numbers summary table early (2026-02-01)
 [2x] For budget discussions, create a numbers summary table early (2026-02-15)
-[3x] BEAD - For budget discussions, create a numbers summary table early (2026-02-21)
-     -> Implemented: Added to CLAUDE.md "Session Behaviour Defaults"
+[3x] For budget discussions, create a numbers summary table early (2026-02-21)
+[4x] BEAD - Implemented: Added to CLAUDE.md "Session Behaviour Defaults"
 ```
 
-Three independent sessions surfaced the same suggestion. That's signal, not noise.
+Four independent sessions surfaced the same suggestion. That's signal, not noise. The rule now fires automatically in every financial session.
+
+```
+[1x] When evaluating vendor decks, map against existing framework (2026-02-03)
+[2x] When evaluating vendor decks, map against existing framework (2026-02-07)
+[3x] BEAD - Implemented: Added mandatory framework grid to "External Analysis"
+```
+
+Different vendors, different weeks, same gap. The system noticed it preferred structured evaluation over freeform reactions.
+
+```
+[1x] For large file writes, use Write tool directly - background agents truncate (2026-02-06)
+[2x] For large file writes, use Write tool directly - background agents truncate (2026-02-19)
+[3x] BEAD - Implemented: Added to CLAUDE.md "System Operations"
+```
+
+The system caught its own bug. A background agent silently truncated a 155KB transcript to 75 lines. After three occurrences, the system now enforces direct writes for large files. Self-healing.
+
+### What 130 Suggestions Actually Look Like
+
+After 8 weeks, the improvement suggestions file had 130+ entries. The tier breakdown:
+
+| Tier | Count | What happens |
+|---|---|---|
+| **BEADs (3+)** | ~7 | Graduated to permanent rules. Each one eliminated a recurring friction point. |
+| **Building toward BEAD (2x)** | ~15 | One more occurrence validates them. Under observation. |
+| **Recent (1x)** | ~110 | Fresh observations. Most never recur. |
+
+The ~110 single observations that never recurred aren't waste. They're the filter working. If everything graduated, the rules would bloat with edge cases. The 3-occurrence threshold keeps the system lean: only patterns validated across multiple independent sessions survive.
 
 ### The Calibration Log
 
@@ -88,6 +116,7 @@ The 3-occurrence threshold matters. It filters noise from signal. A single sugge
 
 ## Related
 
+- [In Production](in-production.md) - Real numbers and lifecycles from 8 weeks of daily use
 - [System Overview](overview.md) - Where the improvement loop sits in the seven-layer architecture
 - [Six-File Memory](memory-system.md) - The calibration log is one of the six memory files
 - [Skills System](skills-system.md) - `/weekly` surfaces BEADs for implementation
