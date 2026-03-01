@@ -36,7 +36,7 @@ graph LR
     style E fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
 ```
 
-<p class="arch-caption">Five stages, one loop. Everything flows through a markdown vault. <a href="architecture/overview.md">Full architecture →</a></p>
+<p class="arch-caption">Five stages, one loop. Everything flows through a markdown vault. <a href="architecture/overview/">Full architecture →</a></p>
 
 </div>
 
