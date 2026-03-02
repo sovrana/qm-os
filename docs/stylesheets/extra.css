@@ -58,6 +58,21 @@
   color: var(--md-accent-fg-color);
 }
 
+/* --- Header: tighten logo spacing --- */
+.md-header__button.md-logo {
+  padding: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.md-header__inner {
+  padding-left: 0.4rem;
+}
+
+/* Ensure header title is visibly clickable */
+.md-header__topic .md-ellipsis {
+  cursor: pointer;
+}
+
 /* --- Homepage: hide TOC sidebar, use full width --- */
 .md-typeset .hide-toc + .md-sidebar--secondary {
   display: none;
