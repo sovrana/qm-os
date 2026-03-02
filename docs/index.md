@@ -56,7 +56,7 @@ Whether you're new to Claude Code or pushing its limits, [pick your starting poi
 
 ## Three things I haven't seen anywhere else
 
-<div class="features" markdown>
+<div class="features features-novel" markdown>
 <div class="feature" markdown>
 <div class="feature-icon">🔄</div>
 <div class="feature-text" markdown>
@@ -84,7 +84,7 @@ Whether you're new to Claude Code or pushing its limits, [pick your starting poi
 
 ## And five things done well
 
-<div class="features" markdown>
+<div class="features features-backbone" markdown>
 <div class="feature" markdown>
 <div class="feature-icon">🌙</div>
 <div class="feature-text" markdown>

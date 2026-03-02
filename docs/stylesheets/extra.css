@@ -2,19 +2,22 @@
    QM-OS Custom Styles
    ============================================ */
 
-/* --- Custom colour palette: dark teal --- */
+/* --- Colour palette with surface tokens --- */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #1a1a2e;
   --md-primary-bg-color: #e2e8f0;
   --md-accent-fg-color: #4fd1c5;
   --md-accent-bg-color: #1a1a2e;
 
-  /* Header */
   --md-primary-fg-color--light: #2d2d44;
   --md-primary-fg-color--dark: #0f0f1a;
-
-  /* Teal tints for links and highlights */
   --md-typeset-a-color: #4fd1c5;
+
+  --qm-surface: rgba(79, 209, 197, 0.025);
+  --qm-border: rgba(255, 255, 255, 0.07);
+  --qm-border-accent: rgba(79, 209, 197, 0.3);
+  --qm-glow-sm: 0 2px 8px rgba(79, 209, 197, 0.08);
+  --qm-glow-md: 0 4px 16px rgba(79, 209, 197, 0.12);
 }
 
 [data-md-color-scheme="default"] {
@@ -22,30 +25,41 @@
   --md-primary-bg-color: #ffffff;
   --md-accent-fg-color: #319795;
   --md-accent-bg-color: #ffffff;
-
   --md-typeset-a-color: #319795;
+
+  --qm-surface: rgba(49, 151, 149, 0.03);
+  --qm-border: rgba(0, 0, 0, 0.07);
+  --qm-border-accent: rgba(49, 151, 149, 0.3);
+  --qm-glow-sm: 0 2px 8px rgba(49, 151, 149, 0.06);
+  --qm-glow-md: 0 4px 16px rgba(49, 151, 149, 0.08);
 }
 
-/* --- Button visibility fix for dark theme --- */
+/* --- Buttons --- */
 [data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) {
-  border-color: rgba(79, 209, 197, 0.5);
+  border-color: var(--qm-border-accent);
   color: #4fd1c5;
+  transition: all 0.2s ease;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary):hover {
   border-color: #4fd1c5;
   background-color: rgba(79, 209, 197, 0.1);
+  transform: translateY(-1px);
 }
 
 [data-md-color-scheme="slate"] .md-typeset .md-button--primary {
   background-color: #4fd1c5;
   border-color: #4fd1c5;
   color: #1a1a2e;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover {
   background-color: #38b2ac;
   border-color: #38b2ac;
+  transform: translateY(-1px);
+  box-shadow: var(--qm-glow-md);
 }
 
 /* --- Announcement bar --- */
@@ -58,7 +72,7 @@
   color: var(--md-accent-fg-color);
 }
 
-/* --- Header: tighten logo spacing --- */
+/* --- Header --- */
 .md-header__button.md-logo {
   padding: 0.2rem;
   margin-right: 0.2rem;
@@ -68,149 +82,153 @@
   padding-left: 0.4rem;
 }
 
-/* Ensure header title is visibly clickable */
 .md-header__topic .md-ellipsis {
   cursor: pointer;
 }
 
-/* --- Homepage: hide TOC sidebar, use full width --- */
-.md-typeset .hide-toc + .md-sidebar--secondary {
-  display: none;
-}
-
-/* Force homepage to hide right TOC via page-specific override */
+/* --- Content width --- */
 body[data-md-color-scheme] .md-content {
   max-width: 52rem;
 }
 
 /* --- Hero section --- */
 .md-typeset .hero-intro {
-  margin: 1rem 0 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  margin: 2.5rem 0 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--qm-border);
 }
 
 .md-typeset .hero-intro h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.4rem;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
 }
 
 .md-typeset .hero-intro .subtitle {
-  font-size: 1.2rem;
-  opacity: 0.75;
-  margin-bottom: 1.5rem;
-  max-width: 560px;
-  line-height: 1.5;
+  font-size: 1.15rem;
+  opacity: 0.7;
+  margin-bottom: 1.8rem;
+  max-width: 580px;
+  line-height: 1.55;
 }
 
-/* --- Smaller, tasteful buttons --- */
 .md-typeset .hero-intro .md-button {
   font-size: 0.82rem;
-  padding: 0.5em 1.4em;
-  border-radius: 0.3rem;
+  padding: 0.55em 1.5em;
+  border-radius: 0.35rem;
 }
 
-/* --- Blockquote intro (personal note) --- */
+/* --- Intro note --- */
 .md-typeset .intro-note {
   border-left: 3px solid var(--md-accent-fg-color);
-  padding: 1rem 1.2rem;
-  margin: 0 0 2rem;
-  font-size: 0.9rem;
+  padding: 1rem 1.4rem;
+  margin: 0 0 2.5rem;
+  font-size: 0.88rem;
   opacity: 0.85;
-  line-height: 1.6;
+  line-height: 1.65;
+  background: var(--qm-surface);
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 
 /* --- Architecture summary diagram --- */
 .md-typeset .arch-summary {
-  margin: 2rem 0 2.5rem;
+  margin: 2.5rem 0 3rem;
   text-align: center;
 }
 
 .md-typeset .arch-caption {
-  font-size: 0.85rem;
-  opacity: 0.7;
+  font-size: 0.82rem;
+  opacity: 0.6;
   margin-top: 0.5rem;
 }
 
-/* --- Demo GIF --- */
-.md-typeset .demo-gif {
-  margin: 2rem 0 2.5rem;
-  text-align: center;
-}
-
-.md-typeset .demo-gif img {
-  border-radius: 0.5rem;
-  max-width: 100%;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-}
-
-.md-typeset .demo-caption {
-  font-size: 0.85rem;
-  opacity: 0.7;
-  margin-bottom: 0.8rem;
-}
-
-.md-typeset .demo-caption code {
+/* --- Section labels --- */
+.md-typeset .section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: var(--md-accent-fg-color);
-  background: none;
-  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-bottom: 0.2rem;
 }
 
-/* --- Feature blocks (the 5 things) --- */
+/* --- Feature blocks --- */
 .md-typeset .features {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.8rem;
-  margin: 1.5rem 0 2.5rem;
+  gap: 0.7rem;
+  margin: 1.5rem 0 3rem;
 }
 
 .md-typeset .feature {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  padding: 1rem 1.2rem;
-  border-radius: 0.4rem;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  transition: border-color 0.2s;
+  padding: 1.1rem 1.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--qm-border);
+  background: transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .md-typeset .feature:hover {
-  border-color: var(--md-accent-fg-color);
+  border-color: var(--qm-border-accent);
+  box-shadow: var(--qm-glow-sm);
+  background: var(--qm-surface);
 }
 
 .md-typeset .feature .feature-icon {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   flex-shrink: 0;
-  width: 2.2rem;
+  width: 2rem;
   text-align: center;
-  padding-top: 0.15rem;
+  padding-top: 0.1rem;
 }
 
 .md-typeset .feature .feature-text strong {
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
   font-size: 0.95rem;
 }
 
 .md-typeset .feature .feature-text span {
-  font-size: 0.85rem;
-  opacity: 0.75;
-  line-height: 1.5;
+  font-size: 0.84rem;
+  opacity: 0.7;
+  line-height: 1.55;
 }
 
-/* --- Timeline (day in the life) --- */
+/* Novel features: teal left accent */
+.md-typeset .features-novel .feature {
+  border-left: 3px solid var(--md-accent-fg-color);
+  padding-left: 1.1rem;
+}
+
+/* Backbone features: 2-column on desktop */
+@media screen and (min-width: 768px) {
+  .md-typeset .features-backbone {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Last item in odd-count backbone grid spans full width */
+.md-typeset .features-backbone .feature:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+/* --- Timeline --- */
 .md-typeset .timeline {
   position: relative;
-  padding-left: 1.2rem;
-  margin: 1.5rem 0 2.5rem;
-  border-left: 2px solid var(--md-default-fg-color--lightest);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0 3rem;
+  border-left: 2px solid var(--qm-border);
 }
 
 .md-typeset .timeline .moment {
   position: relative;
-  padding: 0 0 1.4rem 1.2rem;
+  padding: 0 0 1.6rem 1.4rem;
 }
 
 .md-typeset .timeline .moment:last-child {
@@ -220,30 +238,116 @@ body[data-md-color-scheme] .md-content {
 .md-typeset .timeline .moment::before {
   content: "";
   position: absolute;
-  left: -1.45rem;
-  top: 0.55rem;
-  width: 0.5rem;
-  height: 0.5rem;
+  left: -1.62rem;
+  top: 0.5rem;
+  width: 0.55rem;
+  height: 0.55rem;
   border-radius: 50%;
   background: var(--md-accent-fg-color);
+  box-shadow: 0 0 8px rgba(79, 209, 197, 0.4);
 }
 
 .md-typeset .timeline .moment .time {
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--md-accent-fg-color);
   display: block;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.2rem;
 }
 
 .md-typeset .timeline .moment p {
-  font-size: 0.88rem;
-  opacity: 0.82;
+  font-size: 0.86rem;
+  opacity: 0.75;
   margin: 0;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
-/* --- Card grid (explore section) --- */
+/* --- Skills table --- */
+.md-typeset table:not([class]) {
+  font-size: 0.85rem;
+  border: 1px solid var(--qm-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.md-typeset table:not([class]) td {
+  border-color: var(--qm-border);
+}
+
+.md-typeset table:not([class]) tbody tr:hover td {
+  background: var(--qm-surface);
+}
+
+/* Command column accent */
+.md-typeset table:not([class]) td:first-child code {
+  color: var(--md-accent-fg-color);
+  background: none;
+  font-weight: 600;
+  font-size: 0.88em;
+}
+
+/* --- Demo GIF --- */
+.md-typeset .demo-gif {
+  margin: 2.5rem 0 3rem;
+  text-align: center;
+}
+
+.md-typeset .demo-gif img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--qm-border);
+}
+
+.md-typeset .demo-caption {
+  font-size: 0.82rem;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.md-typeset .demo-caption code {
+  color: var(--md-accent-fg-color);
+  background: none;
+  font-size: 0.88rem;
+}
+
+/* --- CTA bar --- */
+.md-typeset .cta-bar {
+  border: 1px solid var(--qm-border-accent);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.6rem;
+  margin: 3rem 0 1.5rem;
+  text-align: center;
+  background: var(--qm-surface);
+}
+
+.md-typeset .cta-bar .md-button {
+  margin: 0 0.3rem;
+}
+
+/* --- Feedback line --- */
+.md-typeset .feedback-line {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--qm-border);
+  font-size: 0.78rem;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+.md-typeset .feedback-line:hover {
+  opacity: 0.7;
+}
+
+/* --- Card grid --- */
 .md-typeset .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -253,19 +357,19 @@ body[data-md-color-scheme] .md-content {
 
 .md-typeset .grid .card {
   position: relative;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.4rem;
-  padding: 1.1rem 1.3rem;
-  transition: border-color 0.2s, transform 0.15s;
+  border: 1px solid var(--qm-border);
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.4rem;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .md-typeset .grid .card:hover {
-  border-color: var(--md-accent-fg-color);
-  transform: translateY(-1px);
+  border-color: var(--qm-border-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--qm-glow-sm);
 }
 
-/* Make the last link in each card stretch to cover the entire card */
 .md-typeset .grid .card > p:last-child a {
   position: static;
 }
@@ -288,7 +392,7 @@ body[data-md-color-scheme] .md-content {
 
 .md-typeset .grid .card p {
   font-size: 0.82rem;
-  opacity: 0.75;
+  opacity: 0.7;
   margin-bottom: 0.6rem;
   line-height: 1.5;
 }
@@ -313,45 +417,7 @@ body[data-md-color-scheme] .md-content {
   margin-left: 0.5rem;
 }
 
-/* --- Feedback / CTA bar --- */
-.md-typeset .cta-bar {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.4rem;
-  padding: 1.2rem 1.4rem;
-  margin: 2rem 0 1rem;
-  font-size: 0.88rem;
-  line-height: 1.6;
-}
-
-.md-typeset .cta-bar strong {
-  display: block;
-  margin-bottom: 0.3rem;
-}
-
-.md-typeset .feedback-line {
-  margin-top: 2rem;
-  padding-top: 0.8rem;
-  border-top: 1px solid var(--md-default-fg-color--lightest);
-  font-size: 0.8rem;
-  opacity: 0.5;
-  transition: opacity 0.2s;
-}
-
-.md-typeset .feedback-line:hover {
-  opacity: 0.75;
-}
-
-/* --- Section headers --- */
-.md-typeset .section-label {
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.5;
-  margin-bottom: 0.3rem;
-}
-
-/* --- Path selector cards (Get Started page) --- */
+/* --- Path selector cards --- */
 .md-typeset .path-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -360,17 +426,18 @@ body[data-md-color-scheme] .md-content {
 }
 
 .md-typeset .path-cards .path-card {
-  border: 1px solid var(--md-default-fg-color--lightest);
+  border: 1px solid var(--qm-border);
   border-radius: 0.5rem;
   padding: 1.3rem 1.4rem;
-  transition: border-color 0.2s, transform 0.15s;
+  transition: all 0.2s ease;
   cursor: pointer;
   position: relative;
 }
 
 .md-typeset .path-cards .path-card:hover {
-  border-color: var(--md-accent-fg-color);
+  border-color: var(--qm-border-accent);
   transform: translateY(-2px);
+  box-shadow: var(--qm-glow-sm);
 }
 
 .md-typeset .path-cards .path-card .path-icon {
@@ -385,7 +452,7 @@ body[data-md-color-scheme] .md-content {
 
 .md-typeset .path-cards .path-card p {
   font-size: 0.82rem;
-  opacity: 0.75;
+  opacity: 0.7;
   margin-bottom: 0.6rem;
   line-height: 1.5;
 }
@@ -401,10 +468,31 @@ body[data-md-color-scheme] .md-content {
   inset: 0;
 }
 
+/* --- Admonitions: teal-themed tip boxes --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip {
+  border-color: var(--qm-border-accent);
+  background: var(--qm-surface);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset details.tip > summary {
+  background-color: rgba(79, 209, 197, 0.08);
+}
+
 /* --- Responsive --- */
+@media screen and (max-width: 768px) {
+  .md-typeset .features-backbone {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .md-typeset .hero-intro h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
+  }
+  .md-typeset .hero-intro .subtitle {
+    font-size: 1rem;
   }
   .md-typeset .feature {
     flex-direction: column;
