@@ -16,7 +16,7 @@ hide:
 </div>
 
 <div class="intro-note" markdown>
-I run AI transformation at [Warburg Pincus](https://www.warburgpincus.com/). Five workstreams, multiple portfolio companies, no engineering team. Before that: McKinsey, then running billion-pound businesses at Lloyds. I needed an AI that works while I sleep and gets better without me asking. So I built one. 8 weeks of production use. Open source. [Who I am →](about.md)
+Five concurrent workstreams, multiple portfolio companies, no engineering team. I needed an AI that works while I sleep and gets better without me asking. So I built one. 8 weeks of daily production use. Open source. [Who I am →](about.md)
 </div>
 
 <div class="arch-summary" markdown>
@@ -52,65 +52,72 @@ graph LR
 
 Whether you're new to Claude Code or pushing its limits, [pick your starting point →](new-to-claude-code.md)
 
-<p class="section-label">What makes this different</p>
+<p class="section-label">What's genuinely new</p>
 
-## Eight things nothing else does
+## Three things I haven't seen anywhere else
 
 <div class="features" markdown>
 <div class="feature" markdown>
-<div class="feature-icon">🌙</div>
+<div class="feature-icon">🔄</div>
 <div class="feature-text" markdown>
-<strong>It never sleeps</strong>
-<span>A daemon runs 24/7 on a second machine. Hourly heartbeat processes your inbox, flags slipping tasks via Telegram, sends a prioritised morning plan to your phone before you wake up, and an evening summary when you stop. The system has agency between sessions.</span>
-</div>
-</div>
-<div class="feature" markdown>
-<div class="feature-icon">🎙️</div>
-<div class="feature-text" markdown>
-<strong>Meetings become permanent, searchable knowledge</strong>
-<span>Record with MacWhisper, drop the transcript. The system auto-detects the theme, extracts decisions, actions, and insights, routes everything to the right folder. Files under 5,000 words process autonomously. You don't even need to be at your desk.</span>
-</div>
-</div>
-<div class="feature" markdown>
-<div class="feature-icon">📋</div>
-<div class="feature-text" markdown>
-<strong>Tasks managed like a chief of staff</strong>
-<span>Leverage scoring (Impact x Effort) trumps due dates. Strategic weighting from live priorities. Waiting items age and trigger auto-drafted follow-ups. Proactive Telegram alerts when items slip past 7 days. Weekly audit surfaces what fell through cracks.</span>
+<strong>It rewrites its own instructions</strong>
+<span>Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. After 8 weeks: 130+ suggestions extracted, 7 graduated to permanent rules, each eliminating a recurring friction point. Every change is auditable - the calibration log shows exactly what changed and why. You don't configure it. You grow it. [See real examples →](architecture/in-production.md)</span>
 </div>
 </div>
 <div class="feature" markdown>
 <div class="feature-icon">🔴</div>
 <div class="feature-text" markdown>
 <strong>Five-lens red team on every important document</strong>
-<span>Before anything goes to the board, /challenge runs 5 independent agents in parallel: audience fit, logic gaps, vault contradictions, your known blind spots, and a pre-mortem. Independent execution means no anchoring. Verdict + top 3 fixes in one pass.</span>
-</div>
-</div>
-<div class="feature" markdown>
-<div class="feature-icon">🔄</div>
-<div class="feature-text" markdown>
-<strong>It rewrites its own instructions</strong>
-<span>Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. A weekly review surfaces improvements. After a month, the system knows your preferences better than most human assistants. You don't configure it. You grow it. [See real examples →](architecture/in-production.md)</span>
-</div>
-</div>
-<div class="feature" markdown>
-<div class="feature-icon">📱</div>
-<div class="feature-text" markdown>
-<strong>Captures from everywhere, processes centrally</strong>
-<span>Obsidian on your phone. iOS Shortcuts for voice capture ("Hey Siri, QM capture"). Telegram for remote task entry. MacWhisper for transcripts. Share sheet from any app. Everything converges on one inbox that gets processed automatically.</span>
-</div>
-</div>
-<div class="feature" markdown>
-<div class="feature-icon">🔗</div>
-<div class="feature-text" markdown>
-<strong>Connected to your actual work tools</strong>
-<span>Gmail search from the terminal. Corporate Outlook and calendar via browser automation. Markdown to rich HTML clipboard for pasting into Gmail, Word, or Outlook. Office document generation (DOCX, PPTX, XLSX). School emails filtered and summarised.</span>
+<span>/challenge runs 5 independent agents in parallel: audience fit, logic gaps, vault contradictions, your known blind spots, and a pre-mortem. Independent execution means no anchoring - the pre-mortem doesn't know what the audience-fit lens found. Verdict + top 3 fixes in one pass.</span>
 </div>
 </div>
 <div class="feature" markdown>
 <div class="feature-icon">📝</div>
 <div class="feature-text" markdown>
 <strong>It remembers why you decided what you decided</strong>
-<span>Every structural change logged with reasoning. Contradiction detection catches when you reverse a previous decision: "This reverses the decision to remove the budget table. Intentional?" No accidentally relitigating settled questions.</span>
+<span>Every structural change logged with reasoning. Contradiction detection catches when you reverse a previous decision: "This reverses the decision to remove the budget table. Intentional?" Rejected alternatives become permanent constraints unless consciously overturned.</span>
+</div>
+</div>
+</div>
+
+<p class="section-label">The operational backbone</p>
+
+## And five things done well
+
+<div class="features" markdown>
+<div class="feature" markdown>
+<div class="feature-icon">🌙</div>
+<div class="feature-text" markdown>
+<strong>It never sleeps</strong>
+<span>A daemon runs 24/7 on a second machine. Hourly heartbeat processes your inbox, flags slipping tasks, sends a morning plan to your phone before you wake up. The concept: agency between sessions. My implementation: a Telegram bot on a spare Mac. Yours could be a cron job on a VPS.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">🎙️</div>
+<div class="feature-text" markdown>
+<strong>Meetings become permanent, searchable knowledge</strong>
+<span>Drop a transcript, walk away. The system auto-detects the theme, extracts decisions and actions, routes everything to the right folder. The concept: autonomous transcript-to-knowledge pipeline. My implementation: MacWhisper + iCloud. Yours could be Whisper + Dropbox + any transcription tool.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">📋</div>
+<div class="feature-text" markdown>
+<strong>Tasks managed like a chief of staff</strong>
+<span>Leverage scoring (Impact x Effort) trumps due dates. Strategic weighting from live priorities. Waiting items age and trigger auto-drafted follow-ups after 7 days. The concept: AI-prioritised tasks that understand what actually matters this week, not just what's technically next.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">📱</div>
+<div class="feature-text" markdown>
+<strong>Captures from everywhere, processes centrally</strong>
+<span>Phone, voice, transcripts, Telegram, share sheets, email forwarding. Everything converges on one inbox that gets processed automatically. The concept: many capture points, one processing pipeline. The tools are swappable - the architecture isn't.</span>
+</div>
+</div>
+<div class="feature" markdown>
+<div class="feature-icon">🔗</div>
+<div class="feature-text" markdown>
+<strong>Connected to your actual work tools</strong>
+<span>Gmail search from the terminal. Markdown to rich HTML clipboard for pasting into Gmail, Word, or Outlook. Office document generation (DOCX, PPTX, XLSX). The output pipeline matters as much as the input - writing in markdown is pointless if you can't get it into the format stakeholders expect.</span>
 </div>
 </div>
 </div>
