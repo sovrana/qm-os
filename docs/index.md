@@ -206,6 +206,7 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 | [**`/draft`**](skills/draft.md) | Voice-calibrated outbound content: LinkedIn, emails, memos. Batch options for short-form | ~5 min |
 | [**`/weekly`**](skills/weekly.md) | Full system audit: 7 parallel subagents for task cleanup, memory refresh, self-improvement | ~30 min |
 | [**`/changelog`**](skills/changelog.md) | View or log iteration decisions. Contradiction detection built in | ~1 min |
+| [**`/prompt`**](skills/prompt.md) | Structure messy thinking into clean executable briefs. Upstream of everything | ~30 sec |
 
 I've built another 10+ for my own workflows: `/inbox`, `/gmail`, `/prep`, `/publish`, `/show`, `/evening`. Writing a new skill takes under 10 minutes. [How skills work →](architecture/skills-system.md)
 
