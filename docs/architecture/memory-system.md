@@ -26,9 +26,9 @@ flowchart LR
     D -->|Yes| F[Graduate to<br>CLAUDE.md rule]
     F --> G[Default behaviour<br>in all future sessions]
 
-    style C fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style F fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style G fill:#1a3a4a,stroke:#4fd1c5,color:#4fd1c5
+    style C fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style F fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style G fill:#0d1117,stroke:#5eead4,color:#5eead4
 ```
 
 The system discovers its own operating rules through use, not upfront design.

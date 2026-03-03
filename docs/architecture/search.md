@@ -28,10 +28,10 @@ flowchart TD
     R -->|Yes| PAR[Run Semantic +<br>Grep in parallel]
     PAR --> MERGE[Merge results]
 
-    style GREP fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style BM25 fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style SEM fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style PAR fill:#1a3a4a,stroke:#4fd1c5,color:#4fd1c5
+    style GREP fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style BM25 fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style SEM fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style PAR fill:#0d1117,stroke:#5eead4,color:#5eead4
 ```
 
 ### Mode 1: Semantic Search (MCP Server)

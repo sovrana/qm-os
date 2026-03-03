@@ -25,10 +25,10 @@ graph LR
     B --> C[Structure brief<br/><small>goal, constraints,<br/>success test</small>]
     C --> D[Suggest next move<br/><small>/draft, /prep,<br/>or save for later</small>]
 
-    style A fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style B fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style C fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style D fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style A fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style B fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style C fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style D fill:#161b22,stroke:#5eead4,color:#e6edf3
 ```
 
 ### Input

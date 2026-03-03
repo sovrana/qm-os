@@ -21,7 +21,7 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
   font:
-    text: DM Sans
+    text: Inter
     code: JetBrains Mono
   features:
     - navigation.tabs

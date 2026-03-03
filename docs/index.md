@@ -29,11 +29,11 @@ graph LR
     D --> E["Act<br/><small>daemon, alerts,<br/>follow-ups</small>"]
     E --> A
 
-    style A fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style B fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style C fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style D fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
-    style E fill:#2d4a5e,stroke:#4fd1c5,color:#e2e8f0
+    style A fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style B fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style C fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style D fill:#161b22,stroke:#5eead4,color:#e6edf3
+    style E fill:#161b22,stroke:#5eead4,color:#e6edf3
 ```
 
 <p class="arch-caption">Five stages, one loop. Everything flows through a markdown vault. <a href="architecture/overview/">Full architecture →</a></p>
