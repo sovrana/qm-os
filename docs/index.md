@@ -202,7 +202,7 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 
 <p class="section-label">Type a command, get a result</p>
 
-## 7 core skills included
+## 10 core skills included
 
 | Command | What it does | Time |
 |---------|-------------|------|
@@ -214,6 +214,8 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 | [**`/weekly`**](skills/weekly.md) | Full system audit: 7 parallel subagents for task cleanup, memory refresh, self-improvement | ~30 min |
 | [**`/changelog`**](skills/changelog.md) | View or log iteration decisions. Contradiction detection built in | ~1 min |
 | [**`/prompt`**](skills/prompt.md) | Structure messy thinking into clean executable briefs. Upstream of everything | ~30 sec |
+| [**`/visualise`**](skills/visualise.md) | Generate visual infographics and diagrams from vault notes | ~2 min |
+| [**`/capture`**](skills/capture.md) | Stress-test and store metaphors, framings, and one-liners in the [armoury](reference/armoury.md) | ~30 sec |
 
 I've built another 10+ for my own workflows: `/inbox`, `/gmail`, `/prep`, `/publish`, `/show`, `/evening`. Writing a new skill takes under 10 minutes. [How skills work →](architecture/skills-system.md)
 

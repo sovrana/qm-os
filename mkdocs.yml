@@ -97,11 +97,13 @@ nav:
     - Draft: skills/draft.md
     - Prompt: skills/prompt.md
     - Visualise: skills/visualise.md
+    - Capture: skills/capture.md
   - Reference:
     - CLAUDE.md Template: reference/quartermaster-md.md
     - Task Format: reference/task-format.md
     - Anti-Slop Rules: reference/anti-slop.md
     - Rules System: reference/rules-system.md
+    - Armoury: reference/armoury.md
   - About: about.md
 
 extra:
