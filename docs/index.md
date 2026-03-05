@@ -5,7 +5,9 @@ hide:
 
 <div class="hero-intro" markdown>
 
-# Quartermaster
+<div class="hero-logo" markdown>
+![Quartermaster](assets/hero-logo.png)
+</div>
 
 <p class="subtitle">An AI operating system that remembers everything, learns from every correction, and runs while you sleep. Re-explaining context every morning is a stupid use of time.</p>
 
