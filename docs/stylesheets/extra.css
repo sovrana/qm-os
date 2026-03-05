@@ -144,22 +144,14 @@ body[data-md-color-scheme] .md-content {
   margin: 3rem 0 3rem;
   padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--qm-border);
-  text-align: center;
-}
-
-.md-typeset .hero-logo {
-  margin-bottom: 1.5rem;
-}
-
-.md-typeset .hero-logo img {
-  max-width: 420px;
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 8px 32px rgba(94, 234, 212, 0.15));
 }
 
 .md-typeset .hero-intro h1 {
-  display: none;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.6rem;
+  line-height: 1.08;
 }
 
 .md-typeset .hero-intro .subtitle {
@@ -167,8 +159,6 @@ body[data-md-color-scheme] .md-content {
   opacity: 0.65;
   margin-bottom: 2rem;
   max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.55;
   font-family: 'Inter', var(--md-text-font-family), sans-serif;
 }

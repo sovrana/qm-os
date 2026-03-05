@@ -5,9 +5,7 @@ hide:
 
 <div class="hero-intro" markdown>
 
-<div class="hero-logo" markdown>
-![Quartermaster](assets/hero-logo.png)
-</div>
+# Quartermaster
 
 <p class="subtitle">An AI operating system built on Claude Code and Obsidian that remembers everything, learns from every correction, and runs while you sleep. Re-explaining context every morning is a stupid use of time.</p>
 
