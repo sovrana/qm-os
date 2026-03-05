@@ -9,7 +9,7 @@ hide:
 ![Quartermaster](assets/hero-logo.png)
 </div>
 
-<p class="subtitle">An AI operating system that remembers everything, learns from every correction, and runs while you sleep. Re-explaining context every morning is a stupid use of time.</p>
+<p class="subtitle">An AI operating system built on Claude Code and Obsidian that remembers everything, learns from every correction, and runs while you sleep. Re-explaining context every morning is a stupid use of time.</p>
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
 [What's Different](what-makes-this-different.md){ .md-button }
