@@ -15,6 +15,9 @@ hide:
 
 </div>
 
+<div class="intro-note" markdown>
+Quartermaster turns a markdown vault into a persistent, self-improving AI assistant. Seven layers: vault (files) + skills (workflows) + hooks (automation) + daemon (always-on) + memory (persistence) + search (retrieval) + self-improvement (learning). Each works independently. Together they compound. [Full architecture →](architecture/overview.md)
+</div>
 
 <div class="arch-summary" markdown>
 
