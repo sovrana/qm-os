@@ -15,9 +15,6 @@ hide:
 
 </div>
 
-<div class="intro-note" markdown>
-Five concurrent workstreams, multiple portfolio companies, no engineering team. I needed an AI that works while I sleep and gets better without me asking. So I built one. 2+ months of daily production use. Open source. [Who I am →](about.md)
-</div>
 
 <div class="arch-summary" markdown>
 
@@ -45,7 +42,7 @@ graph LR
 ## Built for people who
 
 - **Use AI for real work** - whether ChatGPT, Claude, or Claude Code - and want something that compounds instead of resetting every session
-- **Manage multiple workstreams** with different stakeholders, contexts, and communication styles
+- **Manage multiple domains** with different stakeholders, contexts, and communication styles
 - **Process meetings and transcripts** and need decisions, actions, and insights extracted automatically
 - **Want an AI that works between sessions** - processing your inbox, flagging slipping tasks, sending you a morning plan before you open your laptop
 - **Build AI systems** and want battle-tested architecture patterns for memory, search, self-improvement, and agent orchestration

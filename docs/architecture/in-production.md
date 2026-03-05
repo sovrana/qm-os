@@ -1,18 +1,18 @@
 # What 2+ Months of Production Use Looks Like
 
 !!! abstract "TL;DR"
-    Architecture pages explain mechanisms. This page shows results. Real numbers, real lifecycles, real examples of the system rewriting itself - all from 2+ months of daily production use managing multiple workstreams.
+    Architecture pages explain mechanisms. This page shows results. Real numbers, real lifecycles, real examples of the system rewriting itself - all from 2+ months of daily production use managing multiple domains.
 
 ## The Numbers
 
-After 2+ months of daily use across 5 active workstreams:
+After 2+ months of daily use across 5 active domains:
 
 | Metric | Count | What it means |
 |---|---|---|
 | Improvement suggestions extracted | 130+ | Raw observations from `/transform session` |
 | Graduated to permanent rules (BEADs) | 7 | Validated patterns now running automatically |
 | Calibration log entries | 60+ | Voice, framing, and structure corrections |
-| Cross-theme connections discovered | 12 | Non-obvious links between workstreams |
+| Cross-theme connections discovered | 12 | Non-obvious links between domains |
 | Suggestions that never recurred | ~110 | The filter working correctly |
 
 The ratio matters. 7 out of 130+ graduated. That's a ~5% promotion rate. Everything else was either too situational to generalise or didn't recur. A system that promoted everything would drown in rules. The threshold keeps it lean.
@@ -122,7 +122,7 @@ By week 8, the accumulated institutional memory includes:
 - **60+ calibration entries** covering voice, framing, structure, and stakeholder preferences
 - **A banned words list** of 30+ AI-slop terms, each discovered through actual corrections
 - **Communication rules** calibrated per stakeholder (one gets 180 words max with metrics leading; another gets conversational prose)
-- **12 cross-theme connections** linking workstreams in non-obvious ways
+- **12 cross-theme connections** linking domains in non-obvious ways
 - **Anti-patterns** codified from real failures (overclaiming maturity, mixing strategic observations with resource asks, editing others' documents too aggressively)
 
 None of this was designed upfront. It was discovered, validated, and promoted through use. The system on day 1 was a blank CLAUDE.md with basic instructions. The system on day 56 is a calibrated operating manual that knows how its user thinks, writes, and decides.

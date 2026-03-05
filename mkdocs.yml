@@ -39,7 +39,6 @@ theme:
     - content.code.annotate
     - toc.follow
     - announce.dismiss
-  favicon: assets/favicon.ico
   icon:
     logo: material/compass-outline
     repo: fontawesome/brands/github

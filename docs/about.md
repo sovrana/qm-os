@@ -2,11 +2,11 @@
 
 ## Who Built This
 
-Marc Lien. Executive in Residence at [Warburg Pincus](https://www.warburgpincus.com/), focused on AI transformation of professional services businesses. Background in strategy consulting, consumer banking, and PE portfolio operations. Built this because managing five concurrent workstreams with no engineering team required an AI that compounds, not resets.
+Marc Lien. Executive in Residence at [Warburg Pincus](https://www.warburgpincus.com/), focused on AI transformation of professional services businesses. Background in strategy consulting, consumer banking, and PE portfolio operations. Built this because managing five concurrent domains with no engineering team required an AI that compounds, not resets.
 
 ## Why This Exists
 
-Every morning I'd open Claude Code and spend ten minutes re-explaining context it had yesterday. Five active workstreams, each with different stakeholders, different communication styles, different political dynamics. I needed an assistant where every session makes the next one better.
+Every morning I'd open Claude Code and spend ten minutes re-explaining context it had yesterday. Five active domains, each with different stakeholders, different communication styles, different political dynamics. I needed an assistant where every session makes the next one better.
 
 Nothing like this existed. So I built it. 2+ months of daily production use. Not a weekend project.
 
