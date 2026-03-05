@@ -69,7 +69,7 @@ The armoury feeds into several other system components:
 
 - **[/capture](../skills/capture.md)** captures new entries with stress-testing
 - **[/draft](../skills/draft.md)** checks the armoury for relevant Proven/Tested entries when writing for a specific audience
-- **[/prep](../architecture/skills-system.md)** surfaces armoury entries during stakeholder briefing preparation
+- **[/prep](../skills/prep.md)** surfaces armoury entries during stakeholder briefing preparation
 - **[/challenge](../skills/challenge.md)** tests whether a document's metaphors hold under scrutiny
 
 The armoury is a living document. It grows through capture, gets promoted through use, and occasionally gets retired when a metaphor stops landing.

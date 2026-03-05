@@ -28,14 +28,15 @@ graph TB
         Sys["99_System/"]
     end
 
-    subgraph Skills["Skills Layer"]
+    subgraph Skills["Skills Layer (15 skills)"]
         Morning["/morning"]
         Challenge["/challenge"]
+        StressTest["/stress-test"]
         Weekly["/weekly"]
         Transform["/transform"]
         Brief["/brief"]
-        Changelog["/changelog"]
         Draft["/draft"]
+        More["+ 8 more"]
     end
 
     subgraph Hooks["Hooks Layer"]
@@ -83,14 +84,14 @@ Seven layers, each independent but reinforcing:
 1. **Interface** - Mobile capture (Obsidian, Telegram) for quick input. Claude Code for deep work sessions.
 2. **Always-On Daemon** - A Telegram bot on a second machine. Hourly heartbeat processes inbox, flags waiting items, sends morning plans and evening summaries.
 3. **Vault** - Five numbered folders. Plain markdown. Obsidian-compatible. The single source of truth.
-4. **Skills** - Seven published SKILL.md files. Each encodes a workflow as a standard operating procedure Claude Code executes on command.
+4. **Skills** - Fifteen published SKILL.md files. Each encodes a workflow as a standard operating procedure Claude Code executes on command.
 5. **Hooks** - Three automation points. Context loads on session start, changes commit on session stop, search reindexes after every file write.
 6. **Memory** - Six files that persist across conversations. Strategic state, voice calibration, rejection patterns, cross-theme connections.
 7. **Search** - Three modes (semantic, keyword, exact) queried in parallel for research tasks.
 
 ## Key Insight
 
-The system's value compounds. Every session generates calibration data, improvement suggestions, and cross-theme connections. These feed back into the operating rules. After 8 weeks of use, the CLAUDE.md instruction file contains dozens of rules that were discovered through use, not designed upfront.
+The system's value compounds. Every session generates calibration data, improvement suggestions, and cross-theme connections. These feed back into the operating rules. After 2+ months of use, the CLAUDE.md instruction file contains dozens of rules that were discovered through use, not designed upfront.
 
 ## Customisation Points
 

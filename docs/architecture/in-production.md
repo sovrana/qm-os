@@ -1,11 +1,11 @@
-# What 8 Weeks of Production Use Looks Like
+# What 2+ Months of Production Use Looks Like
 
 !!! abstract "TL;DR"
-    Architecture pages explain mechanisms. This page shows results. Real numbers, real lifecycles, real examples of the system rewriting itself - all from 8 weeks of daily production use managing multiple workstreams.
+    Architecture pages explain mechanisms. This page shows results. Real numbers, real lifecycles, real examples of the system rewriting itself - all from 2+ months of daily production use managing multiple workstreams.
 
 ## The Numbers
 
-After 8 weeks of daily use across 5 active workstreams:
+After 2+ months of daily use across 5 active workstreams:
 
 | Metric | Count | What it means |
 |---|---|---|
@@ -68,7 +68,7 @@ Now every session, across every topic, starts with that rule loaded. The hedging
 
 During a session about personal productivity tooling - completely unrelated to platform strategy - the system noticed something:
 
-> The personal vault uses three-tier knowledge retrieval, automated inbox processing, a changelog as decision trace, and persistent context. Built from zero to production in 8 weeks.
+> The personal vault uses three-tier knowledge retrieval, automated inbox processing, a changelog as decision trace, and persistent context. Built from zero to production in under 2 months.
 
 It logged a cross-theme connection:
 

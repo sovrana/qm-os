@@ -24,8 +24,8 @@ The changelog prevents both. It's a decision log, not a diff.
 Each tracked document gets a companion changelog in a dot-prefixed subdirectory:
 
 ```
-02_Themes/unity/context/platform-one-pager.md          ← the document
-02_Themes/unity/context/.changelog/platform-one-pager.md ← its decision log
+02_Themes/project-a/context/platform-one-pager.md          ← the document
+02_Themes/project-a/context/.changelog/platform-one-pager.md ← its decision log
 ```
 
 The `.changelog/` directory stays out of vault navigation while remaining searchable.
@@ -75,13 +75,13 @@ Round numbers increment across sessions. Round 1 in Monday's conversation and Ro
 Log a decision during iteration:
 
 ```
-/changelog 02_Themes/unity/context/one-pager.md "Removed competitive analysis - premature before Monday"
+/changelog 02_Themes/project-a/context/one-pager.md "Removed competitive analysis - premature before Monday"
 ```
 
 Review iteration history:
 
 ```
-/changelog 02_Themes/unity/context/one-pager.md
+/changelog 02_Themes/project-a/context/one-pager.md
 ```
 
 List all tracked documents:

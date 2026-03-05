@@ -16,7 +16,7 @@ cp -r qm-os/template/ ~/my-vault/
 cd ~/my-vault/
 ```
 
-This gives you the full folder structure, all 7 skill files, hooks, rules, and a starter CLAUDE.md.
+This gives you the full folder structure, skill files, hooks, rules, and a starter CLAUDE.md.
 
 ## 2. Set Up Semantic Search
 

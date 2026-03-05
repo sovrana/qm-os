@@ -21,7 +21,7 @@ A daemon on a second machine eliminates the gaps. Inbox files get processed with
 
 ```mermaid
 graph LR
-    subgraph Marc["Working Machine (MacBook)"]
+    subgraph WM["Working Machine (MacBook)"]
         CC["Claude Code"]
         Obs["Obsidian"]
     end

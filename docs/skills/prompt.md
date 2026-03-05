@@ -125,6 +125,6 @@ is next?" not "prove it works."
 ## Related
 
 - [/draft](draft.md) - Downstream: writes the content the brief describes
-- [/prep](../architecture/skills-system.md) - Downstream: explores vault context before writing
+- [/prep](prep.md) - Downstream: explores vault context before writing
 - [/transform](transform.md) - Alternative: for structured transcripts, not raw thinking
 - [Skills System](../architecture/skills-system.md) - How skills connect and compose

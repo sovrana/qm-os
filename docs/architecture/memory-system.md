@@ -56,9 +56,9 @@ Capped at ~200 lines. When it grows beyond that, older entries graduate to theme
 
 ??? example "Real entry (Live Strategic State)"
     ```
-    **Project Alpha** - Phase 2 complete. Board approved £5M investment
-    from April 1. Lead vendor confirmed, extended through March.
-    5-year plan rebased to ~£250M EBITDA. Now in handover mode.
+    **Project Alpha** - Phase 2 complete. Board approved next-stage
+    investment from April 1. Lead vendor confirmed, extended through
+    March. 5-year plan rebased. Now in handover mode.
     ```
     One paragraph per theme. Current state, not history. Updated every few sessions so every conversation starts with accurate context.
 
@@ -90,7 +90,7 @@ This file is append-only and compounds over time. It's the primary mechanism for
       -> Maturity phasing (M0-M3) with earned labels
     Why: The sceptic test: "what's true right now?"
     ```
-    After 8 weeks: 60+ entries spanning voice, structure, framing, stakeholder calibrations, and compression preferences. Each one prevents a future mistake.
+    After 2 months: 60+ entries spanning voice, structure, framing, stakeholder calibrations, and compression preferences. Each one prevents a future mistake.
 
 ### The Graduation Pattern
 
@@ -109,7 +109,7 @@ Captures non-obvious links between themes. Format includes: title, which themes 
     - Claim: The personal vault IS the accumulation thesis
       running on one person. Three-tier search, automated
       inbox processing, changelog as decision trace.
-      Built from zero to production in ~8 weeks.
+      Built from zero to production in ~2 months.
     - Evidence: full skill architecture, system infrastructure
     - Added: 2026-02-21 | Last verified: 2026-02-21
     ```
@@ -117,7 +117,7 @@ Captures non-obvious links between themes. Format includes: title, which themes 
 
 ## Key Insight
 
-Memory files are cheaper than forgetting. A five-line entry in `calibration-log.md` saves 10 minutes of re-explaining a preference. Over 8 weeks, the calibration log accumulated dozens of entries, each one preventing a future mistake.
+Memory files are cheaper than forgetting. A five-line entry in `calibration-log.md` saves 10 minutes of re-explaining a preference. Over 2 months, the calibration log accumulated dozens of entries, each one preventing a future mistake.
 
 ## Customisation Points
 
@@ -128,7 +128,7 @@ Memory files are cheaper than forgetting. A five-line entry in `calibration-log.
 
 ## Related
 
-- [In Production](in-production.md) - Real examples of memory files in action over 8 weeks
+- [In Production](in-production.md) - Real examples of memory files in action over 2 months
 - [System Overview](overview.md) - Where memory sits in the seven-layer architecture
 - [Self-Improvement Loop](self-improvement.md) - Calibration log patterns graduate to CLAUDE.md rules
 - [Skills System](skills-system.md) - Skills read memory files during execution

@@ -69,7 +69,7 @@ Each theme folder follows a standard layout:
     emails/             # Email drafts and threads
 ```
 
-The `claude.md` file is critical. When Claude Code works within a theme, it reads this file for theme-specific rules, terminology, and constraints. This is how a single AI assistant behaves differently when working on a PE deal versus a construction project.
+The `claude.md` file is critical. When Claude Code works within a theme, it reads this file for theme-specific rules, terminology, and constraints. This is how a single AI assistant behaves differently when working on a client project versus a personal one.
 
 ### The .claude/ Directory
 

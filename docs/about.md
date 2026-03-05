@@ -2,15 +2,13 @@
 
 ## Who Built This
 
-Marc Lien. Senior Advisor at [Warburg Pincus](https://www.warburgpincus.com/), focused on acquiring and scaling an AI-led financial services platform. Before PE: 11 years at McKinsey (financial services strategy), then Managing Director and CEO of MBNA at Lloyds Banking Group, running billion-pound consumer and business banking divisions. Harvard MBA with Distinction. Engineering degree underneath it all.
-
-I manage five concurrent workstreams across multiple portfolio companies. No engineering team. I needed an AI assistant that actually compounds.
+Marc Lien. Executive in Residence at [Warburg Pincus](https://www.warburgpincus.com/), focused on AI transformation of professional services businesses. Background in strategy consulting, consumer banking, and PE portfolio operations. Built this because managing five concurrent workstreams with no engineering team required an AI that compounds, not resets.
 
 ## Why This Exists
 
 Every morning I'd open Claude Code and spend ten minutes re-explaining context it had yesterday. Five active workstreams, each with different stakeholders, different communication styles, different political dynamics. I needed an assistant where every session makes the next one better.
 
-Nothing like this existed. So I built it. 8 weeks of daily production use. Not a weekend project.
+Nothing like this existed. So I built it. 2+ months of daily production use. Not a weekend project.
 
 ## The Thesis
 

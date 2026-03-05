@@ -16,14 +16,14 @@ hide:
 </div>
 
 <div class="intro-note" markdown>
-Five concurrent workstreams, multiple portfolio companies, no engineering team. I needed an AI that works while I sleep and gets better without me asking. So I built one. 8 weeks of daily production use. Open source. [Who I am →](about.md)
+Five concurrent workstreams, multiple portfolio companies, no engineering team. I needed an AI that works while I sleep and gets better without me asking. So I built one. 2+ months of daily production use. Open source. [Who I am →](about.md)
 </div>
 
 <div class="arch-summary" markdown>
 
 ```mermaid
 graph LR
-    A["Capture<br/><small>phone, voice,<br/>transcripts</small>"] --> B["Process<br/><small>7 skills,<br/>auto-routing</small>"]
+    A["Capture<br/><small>phone, voice,<br/>transcripts</small>"] --> B["Process<br/><small>15 skills,<br/>auto-routing</small>"]
     B --> C["Store<br/><small>vault, search,<br/>three-mode retrieval</small>"]
     C --> D["Learn<br/><small>calibration,<br/>self-improvement</small>"]
     D --> E["Act<br/><small>daemon, alerts,<br/>follow-ups</small>"]
@@ -61,7 +61,7 @@ Whether you're new to Claude Code or pushing its limits, [pick your starting poi
 <div class="feature-icon">🔄</div>
 <div class="feature-text" markdown>
 <strong>It rewrites its own instructions</strong>
-<span>Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. After 8 weeks: 130+ suggestions extracted, 7 graduated to permanent rules, each eliminating a recurring friction point. Every change is auditable - the calibration log shows exactly what changed and why. You don't configure it. You grow it. [See real examples →](architecture/in-production.md)</span>
+<span>Corrections log to a calibration file. Patterns that appear 3+ times graduate to permanent rules. After 2 months: 130+ suggestions extracted, 7 graduated to permanent rules, each eliminating a recurring friction point. Every change is auditable - the calibration log shows exactly what changed and why. You don't configure it. You grow it. [See real examples →](architecture/in-production.md)</span>
 </div>
 </div>
 <div class="feature" markdown>
@@ -150,7 +150,7 @@ Needs: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) + Python 3.
 <div class="moment" markdown>
 <span class="time">6:30am - phone buzzes</span>
 
-Telegram: your morning plan is ready. 3 P1 items, 2 follow-ups auto-drafted for stale waiting items. A task on Sean is now at 12 days. You haven't opened your laptop.
+Telegram: your morning plan is ready. 3 P1 items, 2 follow-ups auto-drafted for stale waiting items. A task on Alex is now at 12 days. You haven't opened your laptop.
 </div>
 <div class="moment" markdown>
 <span class="time">9:00am - open Claude Code</span>
@@ -185,7 +185,7 @@ Voice-calibrated against your real writing samples. Anti-slop enforced. 8 varian
 <div class="moment" markdown>
 <span class="time">5:00pm - session ends</span>
 
-Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5/7 planned items done. Tomorrow's top 3. That waiting item on Sean is flagged for escalation.
+Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5/7 planned items done. Tomorrow's top 3. That waiting item on Alex is flagged for escalation.
 </div>
 <div class="moment" markdown>
 <span class="time">Sunday - /weekly</span>
@@ -222,14 +222,14 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 | [**`/visualise`**](skills/visualise.md) | Infographics and diagrams from vault notes | ~2 min |
 | [**`/evening`**](skills/evening.md) | End-of-day reflection and pattern tracking | ~5 min |
 
-I've built more for my own workflows: `/gmail`, `/publish`, `/school-emails`, `/clipboard`. Writing a new skill takes under 10 minutes. [How skills work →](architecture/skills-system.md)
+I've built more for my own workflows: `/gmail`, `/publish`, `/clipboard`. Writing a new skill takes under 10 minutes. [How skills work →](architecture/skills-system.md)
 
 [Browse all skills →](skills/morning.md)
 
 <div class="cta-bar" markdown>
 [Quickstart (30 min) →](quickstart.md){ .md-button .md-button--primary }
 [Architecture deep dive →](architecture/overview.md){ .md-button }
-[Star the repo](https://github.com/sovrana/qm-os){ .md-button }
+[View on GitHub](https://github.com/sovrana/qm-os){ .md-button }
 </div>
 
 <div class="feedback-line" markdown>

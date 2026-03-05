@@ -56,7 +56,7 @@ This matters because a single sequential review anchors on one perspective. Para
 ## Example Usage
 
 ```
-/challenge 02_Themes/unity/emails/2026-02-25_board-update.md
+/challenge 02_Themes/project-a/emails/2026-02-25_board-update.md
 ```
 
 Or challenge by topic:

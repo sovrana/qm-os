@@ -1,7 +1,7 @@
 # Skills System
 
 !!! abstract "TL;DR"
-    Skills are SKILL.md files that act as SOPs for Claude Code. Type `/morning` and Claude follows a step-by-step procedure. Seven published skills cover daily planning, meeting prep, document review, content creation, and weekly maintenance. Write your own in under 10 minutes.
+    Skills are SKILL.md files that act as SOPs for Claude Code. Type `/morning` and Claude follows a step-by-step procedure. Fifteen published skills cover daily planning, meeting prep, document review, content creation, task management, and weekly maintenance. Write your own in under 10 minutes.
 
 ## What
 
@@ -79,12 +79,20 @@ Skills can spawn Task subagents for parallel execution. The `/morning` skill, fo
 | Skill | Purpose | Runtime |
 |---|---|---|
 | `/morning` | Daily prioritised plan | ~5 min |
-| `/weekly` | Archive, audit, review | ~10 min |
-| `/transform` | Process content into vault | ~5 min |
-| `/challenge` | Red team / critical review | ~5 min |
 | `/brief` | Fast pre-meeting one-pager | ~2 min |
+| `/challenge` | Red team / critical review | ~5 min |
+| `/stress-test` | Multi-persona adversarial debate | ~15 min |
+| `/transform` | Process content into vault | ~5 min |
 | `/draft` | Outbound content (emails, LinkedIn) | ~5 min |
+| `/prep` | Vault research before writing | ~10 min |
+| `/prompt` | Structure thinking into briefs | ~30 sec |
+| `/capture` | Store rhetorical weapons | ~30 sec |
+| `/inbox` | Process captures and route | ~5 min |
+| `/show` | Filtered task views | ~30 sec |
+| `/weekly` | Archive, audit, review | ~30 min |
 | `/changelog` | Inspect iteration decisions | ~1 min |
+| `/visualise` | Diagrams from vault notes | ~2 min |
+| `/evening` | End-of-day reflection | ~5 min |
 
 ### Creating Your Own Skill
 

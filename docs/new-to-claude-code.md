@@ -63,7 +63,7 @@ You already know what Claude Code can do. Here's what it can't do on its own - a
 |---|---|
 | Every session starts blank | CLAUDE.md + MEMORY.md load your full context automatically |
 | You remember what matters | The system tracks decisions, contradictions, and rejected alternatives |
-| You run commands manually | 7 core skills included: `/morning`, `/challenge`, `/brief`, `/transform`, and more. Write your own in 10 minutes |
+| You run commands manually | 15 skills included: `/morning`, `/challenge`, `/brief`, `/stress-test`, `/draft`, and more. Write your own in 10 minutes |
 | Corrections disappear | Calibration log captures every correction, patterns graduate to permanent rules |
 | Search = grep | Three-mode search: semantic + BM25 + grep in parallel |
 | Nothing happens between sessions | Heartbeat daemon processes inbox, flags stale items, sends Telegram alerts |

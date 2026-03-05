@@ -20,7 +20,7 @@ Quartermaster runs two parallel feedback mechanisms:
 
 This means "stop using em dashes" goes from a one-off correction to a permanent editing rule. "Start financial sessions with a numbers table" goes from a suggestion to a mandatory session default. The operating rules aren't designed upfront. They're discovered through use and promoted when validated.
 
-After 8 weeks: 130+ suggestions extracted, 7 graduated to permanent rules. Each one eliminated a recurring friction point. [See real examples →](architecture/in-production.md)
+After 2 months: 130+ suggestions extracted, 7 graduated to permanent rules. Each one eliminated a recurring friction point. [See real examples →](architecture/in-production.md)
 
 !!! tip "The concept vs my implementation"
     **The concept:** An append-only correction log + a frequency-tracked suggestion system with a promotion threshold. Corrections that recur get codified as permanent rules. The system's operating instructions are a living document shaped by use.

@@ -1,7 +1,7 @@
 # Self-Improvement Loop
 
 !!! abstract "TL;DR"
-    The system tracks its own friction points. Suggestions that appear 3+ times become BEADs (validated improvements). Rejected framings log to a calibration file and graduate to permanent rules. After 8 weeks: 130+ suggestions extracted, 7 graduated to rules, each eliminating a recurring problem.
+    The system tracks its own friction points. Suggestions that appear 3+ times become BEADs (validated improvements). Rejected framings log to a calibration file and graduate to permanent rules. After 2 months: 130+ suggestions extracted, 7 graduated to rules, each eliminating a recurring problem.
 
 ## What
 
@@ -9,7 +9,7 @@ QM gets smarter every week through two feedback mechanisms: the BEAD system (imp
 
 ## Why
 
-Most AI tool configurations are static. You write instructions once and they decay as your needs evolve. QM inverts this: the operating rules are a living document shaped by actual usage patterns. After 8 weeks, over 130 suggestions were extracted, 7 graduated to formal rules, and each one eliminated a recurring friction point.
+Most AI tool configurations are static. You write instructions once and they decay as your needs evolve. QM inverts this: the operating rules are a living document shaped by actual usage patterns. After 2 months, over 130 suggestions were extracted, 7 graduated to formal rules, and each one eliminated a recurring friction point.
 
 ## How
 
@@ -56,7 +56,7 @@ The system caught its own bug. A background agent silently truncated a 155KB tra
 
 ### What 130 Suggestions Actually Look Like
 
-After 8 weeks, the improvement suggestions file had 130+ entries. The tier breakdown:
+After 2 months, the improvement suggestions file had 130+ entries. The tier breakdown:
 
 | Tier | Count | What happens |
 |---|---|---|
@@ -116,7 +116,7 @@ The 3-occurrence threshold matters. It filters noise from signal. A single sugge
 
 ## Related
 
-- [In Production](in-production.md) - Real numbers and lifecycles from 8 weeks of daily use
+- [In Production](in-production.md) - Real numbers and lifecycles from 2 months of daily use
 - [System Overview](overview.md) - Where the improvement loop sits in the seven-layer architecture
 - [Six-File Memory](memory-system.md) - The calibration log is one of the six memory files
 - [Skills System](skills-system.md) - `/weekly` surfaces BEADs for implementation
