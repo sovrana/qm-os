@@ -206,16 +206,16 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 
 | Command | What it does | Time |
 |---------|-------------|------|
-| [**`/morning`**](skills/morning.md) | Prioritised daily plan with leverage scoring and draft follow-ups for stale items | ~5 min |
-| [**`/brief`**](skills/brief.md) | Pre-meeting one-pager: last 3 meetings, open tasks, "what NOT to say" | ~2 min |
-| [**`/challenge`**](skills/challenge.md) | 5 parallel red-team lenses: audience fit, logic, contradictions, blind spots, pre-mortem | ~5 min |
-| [**`/transform`**](skills/transform.md) | Process transcript into structured knowledge: decisions, actions, insights, routing | ~5 min |
-| [**`/draft`**](skills/draft.md) | Voice-calibrated outbound content: LinkedIn, emails, memos. Batch options for short-form | ~5 min |
-| [**`/weekly`**](skills/weekly.md) | Full system audit: 7 parallel subagents for task cleanup, memory refresh, self-improvement | ~30 min |
-| [**`/changelog`**](skills/changelog.md) | View or log iteration decisions. Contradiction detection built in | ~1 min |
-| [**`/prompt`**](skills/prompt.md) | Structure messy thinking into clean executable briefs. Upstream of everything | ~30 sec |
-| [**`/visualise`**](skills/visualise.md) | Generate visual infographics and diagrams from vault notes | ~2 min |
-| [**`/capture`**](skills/capture.md) | Stress-test and store metaphors, framings, and one-liners in the [armoury](reference/armoury.md) | ~30 sec |
+| [**`/morning`**](skills/morning.md) | Prioritised daily plan with leverage scoring | ~5 min |
+| [**`/brief`**](skills/brief.md) | Pre-meeting one-pager with political context | ~2 min |
+| [**`/challenge`**](skills/challenge.md) | 5-lens parallel red team on any document | ~5 min |
+| [**`/transform`**](skills/transform.md) | Transcript to structured knowledge | ~5 min |
+| [**`/draft`**](skills/draft.md) | Voice-calibrated outbound content | ~5 min |
+| [**`/weekly`**](skills/weekly.md) | Full system audit with 7 parallel subagents | ~30 min |
+| [**`/changelog`**](skills/changelog.md) | Iteration decisions with contradiction detection | ~1 min |
+| [**`/prompt`**](skills/prompt.md) | Structure messy thinking into executable briefs | ~30 sec |
+| [**`/visualise`**](skills/visualise.md) | Infographics and diagrams from vault notes | ~2 min |
+| [**`/capture`**](skills/capture.md) | Stress-test and store rhetorical weapons | ~30 sec |
 
 I've built another 10+ for my own workflows: `/inbox`, `/gmail`, `/prep`, `/publish`, `/show`, `/evening`. Writing a new skill takes under 10 minutes. [How skills work →](architecture/skills-system.md)
 
