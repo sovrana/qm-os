@@ -7,7 +7,7 @@ hide:
 
 # Quartermaster
 
-<p class="subtitle">A personal AI operating system that runs 24/7, captures from every device, processes meetings autonomously, manages your tasks, red-teams your work, and gets smarter every week. Built by a PE exec who got tired of re-explaining context every morning.</p>
+<p class="subtitle">An AI operating system that remembers everything, learns from every correction, and runs while you sleep. Re-explaining context every morning is a stupid use of time.</p>
 
 [Get Started](quickstart.md){ .md-button .md-button--primary }
 [What's Different](what-makes-this-different.md){ .md-button }
