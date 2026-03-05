@@ -98,6 +98,11 @@ nav:
     - Prompt: skills/prompt.md
     - Visualise: skills/visualise.md
     - Capture: skills/capture.md
+    - Stress Test: skills/stress-test.md
+    - Prep: skills/prep.md
+    - Inbox: skills/inbox.md
+    - Show: skills/show.md
+    - Evening: skills/evening.md
   - Reference:
     - CLAUDE.md Template: reference/quartermaster-md.md
     - Task Format: reference/task-format.md

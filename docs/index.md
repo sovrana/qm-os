@@ -202,22 +202,27 @@ Auto-commit to git. Search reindexes. Nothing lost. Telegram: evening summary. 5
 
 <p class="section-label">Type a command, get a result</p>
 
-## 10 core skills included
+## 15 skills included
 
 | Command | What it does | Time |
 |---------|-------------|------|
 | [**`/morning`**](skills/morning.md) | Prioritised daily plan with leverage scoring | ~5 min |
 | [**`/brief`**](skills/brief.md) | Pre-meeting one-pager with political context | ~2 min |
 | [**`/challenge`**](skills/challenge.md) | 5-lens parallel red team on any document | ~5 min |
+| [**`/stress-test`**](skills/stress-test.md) | 3-persona adversarial debate | ~15 min |
 | [**`/transform`**](skills/transform.md) | Transcript to structured knowledge | ~5 min |
 | [**`/draft`**](skills/draft.md) | Voice-calibrated outbound content | ~5 min |
+| [**`/prep`**](skills/prep.md) | Vault research before writing | ~10 min |
+| [**`/prompt`**](skills/prompt.md) | Structure messy thinking into executable briefs | ~30 sec |
+| [**`/capture`**](skills/capture.md) | Stress-test and store rhetorical weapons | ~30 sec |
+| [**`/inbox`**](skills/inbox.md) | Process captures and route to tasks | ~5 min |
+| [**`/show`**](skills/show.md) | Filtered task views by theme or person | ~30 sec |
 | [**`/weekly`**](skills/weekly.md) | Full system audit with 7 parallel subagents | ~30 min |
 | [**`/changelog`**](skills/changelog.md) | Iteration decisions with contradiction detection | ~1 min |
-| [**`/prompt`**](skills/prompt.md) | Structure messy thinking into executable briefs | ~30 sec |
 | [**`/visualise`**](skills/visualise.md) | Infographics and diagrams from vault notes | ~2 min |
-| [**`/capture`**](skills/capture.md) | Stress-test and store rhetorical weapons | ~30 sec |
+| [**`/evening`**](skills/evening.md) | End-of-day reflection and pattern tracking | ~5 min |
 
-I've built another 10+ for my own workflows: `/inbox`, `/gmail`, `/prep`, `/publish`, `/show`, `/evening`. Writing a new skill takes under 10 minutes. [How skills work →](architecture/skills-system.md)
+I've built more for my own workflows: `/gmail`, `/publish`, `/school-emails`, `/clipboard`. Writing a new skill takes under 10 minutes. [How skills work →](architecture/skills-system.md)
 
 [Browse all skills →](skills/morning.md)
 
