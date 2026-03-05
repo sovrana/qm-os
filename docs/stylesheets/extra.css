@@ -349,6 +349,10 @@ body[data-md-color-scheme] .md-content {
   background: var(--qm-surface);
 }
 
+.md-typeset table:not([class]) td:first-child {
+  white-space: nowrap;
+}
+
 .md-typeset table:not([class]) td:first-child code {
   color: var(--md-accent-fg-color);
   background: none;
